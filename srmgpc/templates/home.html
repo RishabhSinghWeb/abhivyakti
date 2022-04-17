@@ -1,0 +1,113 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/home2.css' %}">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+
+  <title>Abhivyakti'22</title>
+</head>
+
+<body>
+  <!-- <div id="loader"></div> -->
+  <div id="content">
+    {% include 'navbar.html' %}
+    <div class="main">
+      <p class="text-center text-1">ABHIVYAKTI'22</p>
+      <p class="text-center text-2">
+        The Cultural Fest
+      </p>
+      <p class="text-3 text-center">28-30 April, Shri Ramswaroop Memorial College of Engineering & Management, Lucknow</p>
+
+      {% if request.user.is_authenticated %}
+
+      {% else %}
+
+      <div class="container d-flex justify-content-center">
+        <div class="box-1 d-flex justify-content-evenly">
+          <a href="{% url 'signup' %}" class="link-1">REGISTER</a>
+          <a href="{% url 'login' %}" class="link-1">LOGIN</a>
+        </div>
+      </div>
+      {% endif %}
+
+      <p class="anim anim-1">*</p>
+      <p class="anim anim-2">*</p>
+      <p class="anim anim-3">*</p>
+      <p class="anim anim-4">*</p>
+      <p class="anim anim-5">*</p>
+      <p class="anim anim-6">*</p>
+      <p class="anim anim-7">*</p>
+      <p class="anim anim-8">*</p>
+      <p class="anim anim-9">*</p>
+      <p class="anim anim-10">*</p>
+      <p class="anim anim-11">*</p>
+
+    </div>
+
+
+  </div>
+
+  <script>
+    var loader;
+    function loadNow(opacity){
+      if(opacity<=0){
+        displayContent();
+      }
+      else{
+        loader.style.opacity = opacity;
+        window.setTimeout(function(){
+          loadNow(opacity - 0.05)
+        }, 100);
+      }
+    }
+    function displayContent(){
+      loader.style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    }
+
+    document.addEventListener("DOMContentLoaded", function(){
+      loader = document.getElementById('loader');
+      loadNow(5.1);
+    })
+
+    $(document).ready(function () {
+      $('.link-1').mouseover(function () {
+        $('.main').css('animation-duration', '10s');
+      });
+      $('.link-1').mouseout(function () {
+        $('.main').css('animation-duration', '60s');
+      });
+    });
+  </script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

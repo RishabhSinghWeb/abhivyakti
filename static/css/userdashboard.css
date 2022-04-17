@@ -1,0 +1,517 @@
+body {
+    background: url("../main5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0px;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: rgb(15, 247, 255);
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(8, 204, 253);
+}
+input{
+    outline: none;
+}
+
+.main1 {
+    margin-top: 25px;
+}
+
+.text-1 {
+    color: cyan;
+}
+
+.profile-pic {
+    height: 200px;
+    width: 200px;
+    border: 5px outset cyan;
+    border-radius: 20px;
+
+}
+
+.box-25 {
+    margin-top: 25px;
+    width: 400px;
+    padding: 0px 20px 0px 55px;
+}
+
+.text-2 {
+    position: relative;
+    right: 85px;
+    top: 15px;
+}
+
+.text-15 {
+    padding-left: 25px;
+}
+
+.card-1 {
+    height: 635px;
+    background-color: rgb(102, 102, 102, 0.6);
+    margin: 0px 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10pc black, 0px 0px 15px black;
+}
+
+.text-3 {
+    color: cyan;
+    text-decoration: underline;
+}
+
+.box-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-text {
+    color: cyan;
+    padding: 0px;
+    font-size: larger;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+.detail-text-value {
+    color: rgb(255, 242, 242);
+
+}
+
+.button-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    text-decoration: none;
+    font-size: large;
+    color: cyan;
+    border: 2px solid cyan;
+    padding: 6px 30px;
+    background-color: transparent;
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+
+.button:hover {
+    text-decoration: none;
+    background-color: cyan;
+    color: black;
+    font-weight: bolder;
+}
+
+.box-4 {
+    background-color: rgb(102, 102, 102, 0.6);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px black;
+}
+
+.heading-1 {
+    color: cyan;
+    font-size: large;
+    font-weight: bold;
+}
+
+.details-2 {
+    border: 2px solid cyan;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    border-radius: 15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.details-2:hover {
+    background-color: cyan;
+    color: black;
+    font-weight: bold;
+}
+
+.box-30 {
+    margin: 0px 25px 12px 25px;
+}
+
+.box-5 {
+    margin-top: 30px;
+    border-radius: 15px;
+    background-color: rgb(102, 102, 102, 0.6);
+    height: 270px;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px black;
+}
+
+.box-7 {
+    height: 180px;
+    background-color: cyan;
+    margin-left: 20px;
+
+}
+
+.bar {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+}
+
+.blank-box-1 {
+    height: 25px;
+    margin: 20px;
+    margin-left: 0px;
+    position: relative;
+    right: 15px;
+    background-color: rgb(102, 102, 102);
+}
+
+.blank-box-2 {
+    height: 25px;
+    margin: 20px;
+    width: 60%;
+    margin-left: 0px;
+    position: relative;
+    right: 15px;
+
+    background-color: rgb(102, 102, 102);
+}
+
+.blank-box-3 {
+    height: 25px;
+    margin: 20px;
+    width: 30%;
+    margin-left: 0px;
+    position: relative;
+    right: 15px;
+
+    background-color: rgb(102, 102, 102);
+}
+
+.box-8 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opn {
+    position: relative;
+    top: 5px;
+    right: 45px;
+}
+
+.modal-1 {
+
+    border-radius: 30px;
+    background: url("../main5.jpg");
+    background-position: center;
+    border: 5px inset yellow;
+    box-shadow: 1px 3px 10px black, 1px 3px 20px black, 1px 3px 25px black;
+}
+
+.modal-2 {
+    border: 7px inset yellow;
+    border-radius: 30px;
+}
+
+.modal-logo {
+    margin-top: 25px;
+    height: 100px;
+    width: 63px;
+}
+
+.box-101 {
+    padding: 50px 0px 50px 90px;
+}
+
+.box-103 {
+    padding-left: -80px;
+}
+
+.text-101 {
+    color: yellow;
+    font-size: large;
+    font-weight: bold;
+}
+
+.button-101 {
+    background: none;
+    padding: 5px 100px;
+    font-weight: bold;
+    font-size: large;
+    color: yellow;
+    border: 2px outset yellow;
+    border-radius: 30px;
+    position: relative;
+    right: 55px;
+}
+
+.button-101:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.form-box {
+    padding: 6px;
+    border-bottom: 2px solid yellow;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    color: white;
+    caret-color: cyan;
+}
+
+#id_profile_pic {
+    display: inline;
+}
+
+.modal-3 {
+    border-radius: 10px;
+
+    height: 750px;
+    background-color: white;
+}
+
+.ticket-logo {
+    height: 80px;
+    width: 45px;
+    filter: invert(100%);
+}
+
+.ticket-qr {
+    height: 110px;
+    width: 110px;
+    margin-top: 10px;
+}
+
+.text-301 {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.text-302 {
+    font-size: 0.7rem;
+    margin-bottom: 6px;
+}
+
+.text-306 {
+    font-weight: bold;
+}
+
+.text-308 {
+    font-size: 0.6rem;
+    margin-bottom: 0px;
+}
+
+.text-309 {
+    font-size: 0.7rem;
+}
+
+.text-307 {
+    margin-top: 8px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 0.6rem;
+}
+
+.text-303 {
+    margin-left: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+
+.text-305 {
+    margin-left: 20px;
+    font-size: 0.9rem;
+
+}
+
+.card-2 {
+    height: 350px;
+}
+
+#overflow {
+    color: white;
+    height: 190px;
+    overflow-y: scroll;
+}
+
+#overflow::-webkit-scrollbar {
+    width: 3px;
+
+}
+
+#overflow::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#overflow::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    background: cyan;
+}
+
+#overflow::-webkit-scrollbar-thumb:hover {
+    background: rgb(1, 117, 117);
+}
+.text-333{
+    font-size: 11px;
+}
+.text-316{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media print {
+
+    html,
+    body {
+        height: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden;
+    }
+
+}
+
+
+
+@media only screen and (max-width:550px) {
+
+    .text-2 {
+        position: relative;
+        top: 35px;
+        right: 125px;
+        width: 200px;
+        font-size: small;
+    }
+
+    .heading-1 {
+        font-size: x-small;
+    }
+
+    .text-4 {
+        font-size: x-small;
+    }
+
+    .box-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .profile-pic {
+        height: 100px;
+        width: 100px;
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+
+    .card-1 {
+        margin: 0px;
+    }
+
+    .detail-text {
+        font-size: small;
+    }
+
+    .box-25 {
+        margin-top: 0px;
+        padding-left: 0px;
+    }
+
+    .button {
+        padding: 5px 25px;
+        font-size: small;
+        border-radius: 10px;
+    }
+
+    .card-1 {
+        height: 320px;
+    }
+
+    .box-4 {
+        margin-top: 30px;
+    }
+
+    .heading-1 {
+        padding-left: 0px;
+    }
+
+    .box-30 {
+        margin: 10px 0px;
+    }
+
+    .text-15 {
+        padding: 0px;
+        padding-left: 5px;
+    }
+
+    .text-30 {
+        margin: 0px;
+    }
+
+    .box-7 {
+        margin-left: 0px;
+        height: 110px;
+    }
+
+    .bar {
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+    }
+
+    .blank-box-1 {
+        height: 20px;
+        margin: 10px;
+    }
+
+    .blank-box-2 {
+        height: 20px;
+        margin: 10px;
+    }
+
+    .blank-box-3 {
+        height: 20px;
+        margin: 10px;
+    }
+
+    .box-8 {
+        margin-top: 20px;
+    }
+
+    .box-5 {
+        height: 290px;
+        margin-bottom: 20px;
+    }
+
+    .button-101 {
+        position: relative;
+        right: 40px;
+    }
+
+    .box-101 {
+        padding-left: 75px;
+    }
+}
+
+@media only screen and (max-width:1024px) and (min-width:551px) {
+    .card-2 {
+        margin-top: 40px;
+    }
+}

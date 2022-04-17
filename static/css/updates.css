@@ -1,0 +1,144 @@
+body{
+    height: 90vh;
+    background: url("../main7.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    
+}
+
+
+.logo{
+    position: fixed;
+    top: 25px;
+    left: 25px;
+}
+.img-logo{
+    height: 65px;
+    width: 45px;
+}
+.text-1{
+    font-size: 3.5rem;
+    margin-top: 80px;
+    font-family: 'Quicksand', sans-serif;
+}
+.main-1{
+    margin-top:50px;
+}
+.main-2{
+    border-right: 8px ridge white;
+    
+}
+.main-3{
+    padding: 0px 20px;
+}
+.text-21{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.box-21{
+    height: 450px;
+    overflow-y: scroll;
+}
+.box-21::-webkit-scrollbar{
+    width: 7px;
+    
+}
+.box-21::-webkit-scrollbar-track {
+    background: transparent;
+}
+.box-21::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    background: white;
+    height: 100px;
+    
+}
+.box-21::-webkit-scrollbar-thumb:hover {
+    background: cyan;
+}
+.text-22{
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+.span{
+    margin-left: 140px;
+    color: rgb(180, 180, 180);    
+}
+
+.box-31{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    overflow-y: scroll;
+}
+.box-31::-webkit-scrollbar{
+    width: 7px;
+    
+}
+.box-31::-webkit-scrollbar-track {
+    background: transparent;
+}
+.box-31::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    background: white;
+    height: 100px;
+    
+}
+.box-31::-webkit-scrollbar-thumb:hover {
+    background: cyan;
+}
+
+.text-31{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.text-41{
+    font-size: 2rem;
+    font-family: 'Merienda One', cursive;
+}
+.text-42{
+    font-family: 'Alegreya SC', serif;
+}
+.box-41{
+    border-right: 4px solid white;
+}
+.main-4{
+    background: rgb(0,0,0,0.3);
+    border-radius: 50px;
+    padding: 20px 5px;
+    margin: 0px 10px 30px 10px;
+}
+
+
+@media only screen and (max-width:550px){
+    .text-1{
+        font-size: 2.1rem;
+        margin-top: 120px;
+        font-weight: bold;
+    }
+    .text-21{
+        padding: 12px 5px;
+    }
+    .box-21{
+        margin: 0px 0px 0px 15px;
+    }
+    .text-31{
+        padding: 60px 5px 12px 5px;
+    }
+    .box-31{
+        height: 550px;
+        padding: 0px 0px 30px 0px;
+        margin: 0px;
+        
+    }
+    .text-22{
+        padding: 0px 12px;
+    }
+    .main-2{
+        border:none;
+        
+    }
+    .box-41{
+        border-right: none;
+    }
+}

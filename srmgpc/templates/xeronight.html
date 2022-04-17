@@ -1,0 +1,166 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font style -->
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/xero.css' %}">
+
+  <title>Xero Night || Abhivyakti'22</title>
+</head>
+
+<body>
+  {% include 'navbar.html' %}
+  <!-- <div class="main-1">
+
+  </div> -->
+  <img src="{% static 'rudraksh.jpg' %}" alt="" class="img-fluid w-100 shadow-lg">
+
+  <p class="text-1 text-center">LET'S GO WHERE THE MUSIC IS TOO LOUD</p>
+
+  <div class="container mt-md-5 mt-4">
+    <h5 class="text-center">Join The Event</h5>
+    <p class="text-center text-30">XERO NIGHT</p>
+    <h5 class="text-center">On April 30, 2022</h5>
+    <p class="text-40 container text-center px-md-5 px-3 py-5">Lots of enjoying and dancing crowd, banging heads,
+      Enthusiastic sound
+      system, a
+      reverberating stage and a chance for you to be with the crowd and enjoy the whole evening with one of the most
+      Lovable, Sensational and Enthusiastic band <i><b>"Rudraksh"</b></i>. We would like to welcome you all in our Xero Night on 30th
+      April to enjoy your night with our star in our college.<br><br>
+
+      15,000 heads banging, 60,000 watts of sound, a reverberating stage, one night and your chance to be in the midst
+      of it all. With bands from all over the country coming to our college for xero, this fest surely rocks.</p>
+  </div>
+
+  <div class="container-fluid mt-5">
+    <p class="text-15 text-center my-5">KEEP CALM IT'S THE FINAL COUNTDOWN</p>
+    <div class="row">
+      <div class="col-3 box-1">
+        <div class="box-2 d-flex align-items-center justify-content-center">
+          <p class="text-center text-5 text-5-box-1" id="days">00</p>
+
+        </div>
+      </div>
+      <div class="col-3 box-1">
+        <div class="box-2 d-flex align-items-center justify-content-center">
+          <p class="text-center text-5 text-5-box-2" id="hours">00</p>
+        </div>
+      </div>
+      <div class="col-3 box-1">
+        <div class="box-2 d-flex align-items-center justify-content-center">
+          <p class="text-center text-5 text-5-box-3" id="min">00</p>
+        </div>
+      </div>
+      <div class="col-3 box-1">
+        <div class="box-2 d-flex align-items-center justify-content-center">
+          <p class="text-center text-5 text-5-box-4" id="sec">00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container box-101">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <p class="text-101">REACH US</p>
+        <p class="text-102">Get Direction to the Event Hall</p>
+        <p class="text-103">Venue</p>
+        <p class="text-104">Shri Ramswaroop Memorial College of <br>Engg. & Management</p>
+        <p class="text-105">Main Road Tiwariganj (NH-28), Faizabad Rd<br>
+          Lucknow, Uttar Pradesh 227105</p>
+        <div class="row mt-3">
+          <div class="col-12">
+            <p class="text-106">Date</p>
+
+            <p class="text-107"><span style="font-weight: bold;">Day 3 : </span>30th April<span
+                style="font-weight: bold;"><br>Time : </span>7 PM</p>
+
+          </div>
+          <div class="col-12 mt-3">
+            <p class="text-108">Event Manager</p>
+            <p class="text-109"><span style="font-weight: bold;">Name : </span>Er. Mayank Kumar<br><span
+                style="font-weight: bold;">Phone : </span>9452154977</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="mapouter">
+          <div class="gmap_canvas mt-lg-0 mt-4"><iframe width="600" height="600" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=shei%20ramswaroop%20group%20of%20professional%20college&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+              href="https://elitetorrent-es.com">elitetorrent</a></div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script type="text/javascript">
+
+    // Set the date we're counting down to
+    var countDownDate = new Date("Apr 30, 2022 19:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      if(days<0){
+        days = 00;
+        hours = 00;
+        minutes = 00;
+        seconds = 00;
+      }
+
+      // Output the result in an element with id="demo"
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("min").innerHTML = minutes;
+      document.getElementById("sec").innerHTML = seconds;
+
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+
+  </script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

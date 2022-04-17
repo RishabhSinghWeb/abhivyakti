@@ -1,0 +1,496 @@
+body{
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+@font-face{
+    font-family: mainfont;
+    src: url("../font/main.otf");
+}
+#loader{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    overflow: visible;
+    background: url("../gif/load.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#content{
+    height: 100vh;
+
+}
+
+
+.main{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: url("../mainbg2.jpg");
+    background-size: cover;
+    background-position: center;
+    animation-name: colorss;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+.logo{
+    height: 75px;
+    width: 50px;
+    position: fixed;
+    top: 25px;
+    left: 30px;
+    z-index: 1;
+}
+.text-1{
+    font-family: mainfont;
+    /* font-family: 'Amarante', cursive; */
+    text-shadow: 0px 0px 1px black,0px 0px 1px black,0px 0px 2px black,0px 0px 3px black,0px 0px 4px black,0px 0px 5px black,0px 0px 20px rgb(253, 180, 45),0px 0px 10px rgb(255, 94, 0),0px 0px 11px rgba(255, 136, 0, 0.945);
+   
+    font-size: 7rem;
+    /* font-weight: bolder; */
+    padding-top: 200px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.text-2{
+    font-family: 'Cinzel', serif;
+    /* font-family: 'Aclonica', sans-serif; */
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: relative;
+    bottom: 25px;
+    text-shadow: 0px 0px 1px black,0px 0px 2px black,0px 0px 2px black,0px 0px 3px black,0px 0px 10px rgba(255, 177, 32, 0.938),0px 0px 10px rgba(255, 177, 32, 0.938);
+}
+.text-3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px rgb(68, 2, 2),0px 0px 2px black,0px 0px 6px orange;
+    position: relative;
+    bottom: 20px;
+}
+
+.box-1{
+    margin-top: 20px;
+    
+    width: 500px;
+}
+.link-1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.1rem;
+    
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px 0px 1px rgb(253, 167, 69),0px 0px 2px rgb(248, 105, 105),0px 0px 4px black;
+    padding: 8px 20px;
+    border-radius: 15px;
+    border-top: 5px outset rgb(255, 81, 0);
+    border-bottom: 5px outset rgb(255, 60, 0);
+    border-left: 5px inset rgb(255, 166, 0);
+    border-right: 5px inset rgb(255, 166, 0);
+    box-shadow: 0px 0px 8px rgb(255, 58, 58),0px 0px 12px rgb(7, 2, 2),0px 0px 14px black;
+}
+.link-1:hover{
+    color: white;
+    
+    
+}
+
+.anim-1{
+    font-size: 3rem;
+    position: fixed;
+    top: 250px;
+    left: 745px;
+    animation: fly1 20s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes fly1{
+    0%{
+        top:100px;
+        left: 100px;
+    }
+    25%{
+        top: 700px;
+        left: 1500px;
+    }
+    50%{
+        top: 200px;
+        left: 1245px;
+        transform: rotate(180deg);
+    }
+    75%{
+        top: 700px;
+        left: 200px;
+        transform: rotate(360deg);
+    }
+    100%{
+        top: 100px;
+        left: 100px;
+    }
+}
+
+.anim-2{
+    font-size: 3rem;
+    position: fixed;
+    top: 0px;
+    left: 250px;
+    animation: fly2 20s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes fly2{
+    0%{
+        top: 600px;
+        left: 1500px;
+    }
+    25%{
+        top: 700px;
+        left: 50px;
+    }
+    50%{
+        top: 200px;
+        left: 1200px;
+        transform: rotate(270deg);
+    }
+    75%{
+        top: 00px;
+        left: 900px;
+    }
+    100%{
+        top: 600px;
+        left: 1500px;
+    }
+}
+.anim-3{
+    font-size: 3rem;
+    position: fixed;
+    top: 0px;
+    left: 400px;
+    animation: fly3 20s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes fly3{
+    0%{
+        top: 500px;
+        left: 600px;
+    }
+    25%{
+        top: 50px;
+        left: 100px;
+        transform: rotate(180deg);
+    }
+    50%{
+        top: 150px;
+        left: 1000px;
+    }
+    75%{
+        top: 300px;
+        left: 100px;
+    }
+    100%{
+        top: 500px;
+        left: 600px;
+    }
+}
+.anim-4{
+    font-size: 3rem;
+    position: fixed;
+    top: 0px;
+    left: 550px;
+    animation: fly4 20s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes fly4{
+    0%{
+        top: 300px;
+        left: 1500px;
+    }
+    25%{
+        top: 800px;
+        left: 750px;
+    }
+    50%{
+        top: 300px;
+        left: 400px;
+        transform: rotate(-360deg);
+    }
+    75%{
+        top: 100px;
+        left: 900px;
+        transform: rotate(180deg);
+    }
+    100%{
+        top: 300px;
+        left: 1500px;
+    }
+}
+.anim-5{
+    font-size: 3rem;
+    position: fixed;
+    top: 500px;
+    left: 700px;
+    animation: fly5 20s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes fly5{
+    0%{
+        top: 300px;
+        left: 250px;
+    }
+    25%{
+        top: 400px;
+        left: 1400px;
+    }
+    50%{
+        top: 350px;
+        left: 100px;
+        transform: rotate(360deg);
+    }
+    75%{
+        top: 450px;
+        left: 900px;
+    }
+    100%{
+        top: 300px;
+        left: 250px;
+    }
+}
+.anim-6{
+    font-size: 3rem;
+    position: fixed;
+    bottom: 0px;
+    left: 850px;
+    animation: fly6 20s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes fly6{
+    0%{
+        top: 0px;
+        left: 800px;
+    }
+    25%{
+        top: 50px;
+        left: 50px;
+    }
+    50%{
+        top: 300px;
+        left: 600px;
+    }
+    75%{
+        top: 500px;
+        left: 900px;
+        transform: rotate(180deg);
+    }
+    100%{
+        top: 0px;
+        left: 800px;
+    }
+}
+.anim-7{
+    font-size: 3rem;
+    position: fixed;
+    bottom: 0px;
+    left: 1000px;
+    animation: fly7 20s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes fly7{
+    0%{
+        top: 0px;
+        left: 500px;
+    }
+    25%{
+        top: 200px;
+        left: 1000px;
+        transform: rotate(180deg);
+    }
+    50%{
+        top: 300px;
+        left: 500px;
+    }
+    75%{
+        top: 150px;
+        left: 900px;
+    }
+    100%{
+        top: 0px;
+        left: 500px;
+    }
+}
+.anim-8{
+    font-size: 3rem;
+    position: fixed;
+    bottom: 0px;
+    left: 1150px;
+    animation: fly8 20s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes fly8{
+    0%{
+        top: 500px;
+        left: 0px;
+    }
+    25%{
+        top: 700px;
+        left: 1600px;
+    }
+    50%{
+        top: 400px;
+        left: 1400px;
+        transform: rotate(180deg);
+    }
+    75%{
+        top: 150px;
+        left: 600px;
+    }
+    100%{
+        top: 500px;
+        left: 0px;
+    }
+}
+.anim-9{
+    font-size: 3rem;
+    position: fixed;
+    bottom: 0px;
+    left: 1300px;
+    animation: fly9 20s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes fly9{
+    0%{
+        top: 100px;
+        left: 0px;
+    }
+    25%{
+        top: 0px;
+        left: 1550px;
+    }
+    50%{
+        top: 200px;
+        left: 1600px;
+    }
+    75%{
+        top: 250px;
+        left: 700px;
+        transform: rotate(180deg);
+    }
+    100%{
+        top: 100px;
+        left: 0px;
+    }
+}
+.anim-10{
+    font-size: 3rem;
+    position: fixed;
+    bottom: 0px;
+    left: 1400px;
+    animation: fly10 20s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes fly10{
+    0%{
+        top: 600px;
+        left: 1500px;
+    }
+    25%{
+        top: 250px;
+        left: 1450px;
+        transform: rotate(180deg);
+    }
+    50%{
+        top: 100px;
+        left: 100px;
+    }
+    75%{
+        top: 400px;
+        left: 50px;
+    }
+    100%{
+        top: 600px;
+        left: 1500px;
+    }
+}
+.anim-11{
+    font-size: 3rem;
+    position: fixed;
+    top: 500px;
+    left: 0px;
+    animation: fly11 20s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes fly11{
+    0%{
+        top: 500px;
+        left: 0px;
+    }
+    25%{
+        top: 50px;
+        left: 10px;
+        transform: rotate(180deg);
+    }
+    50%{
+        top: 100px;
+        left: 500px;
+    }
+    75%{
+        top: 400px;
+        left: 1000px;
+    }
+    100%{
+        top: 500px;
+        left: 0px;
+    }
+}
+.anim{
+    text-shadow: 0px 0px 1px orange,0px 0px 2px orange,0px 0px 3px orange,0px 0px 4px orange,0px 0px 5px orange,0px 0px 6px orange,0px 0px 7px orange,0px 0px 8px orange;
+    z-index: -2;
+}
+
+
+@keyframes colorss{
+    0%{
+        filter: hue-rotate(240deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+    100%{
+        filter: hue-rotate(240deg);
+    }
+    
+}
+
+@media only screen and (max-width:550px){
+    .text-1{
+        padding-top: 230px;
+        font-size: 3.3rem;
+    }
+    .text-2{
+        position: relative;
+        bottom: 15px;
+        font-size: 1.7rem;
+    }
+    .text-3{
+        position: relative;
+        bottom: 10px;
+        font-size: 1.1rem;
+    }
+    .link-1{
+        font-size: 1.3rem;
+    }
+}

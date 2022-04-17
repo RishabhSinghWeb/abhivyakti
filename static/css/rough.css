@@ -1,0 +1,237 @@
+body{
+    
+    background: url("../starsss.jpg") center;
+    
+}
+
+.main1{
+    background: url("../pratyaksh.png") center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    box-shadow: 4px 4px 20px black;
+    overflow-x: hidden;
+}
+.text-50{
+    color: white;
+    font-size: 2.5rem;
+    padding: 50px 0px;
+    font-family: 'Langar', cursive;
+    text-shadow: 0px 0px 3px lightblue,0px 0px 6px lightblue,0px 0px 9px blue;
+}
+
+.main2{
+    margin-bottom: 50px;
+}
+.text-15{
+    font-size: 3rem;
+    color: white;
+    font-family: 'Acme', sans-serif;
+    
+    padding: 50px 0px;
+    text-shadow: 0px 0px 3px lightblue,0px 0px 6px lightblue,0px 0px 9px blue;
+}
+.box-5{
+    width: 100%;
+}
+.box-3{
+    height: 400px;
+}
+.text-5{
+    padding: 25px 30px;
+    font-size: 3.2rem;
+    color: white;
+    font-family: 'Play', sans-serif;
+    
+}
+
+.text-5-box-1{
+    border-radius: 50%;
+    border-bottom: 11px groove blue;
+    border-top: 11px groove blue;
+    text-shadow: 1px 1px 3px blue;
+    animation-name: border;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+.text-5-box-2{
+    border-radius: 50%;
+    border-bottom: 11px groove rgb(57, 255, 57);
+    border-top: 11px groove rgb(59, 255, 59);
+    text-shadow: 1px 1px 3px rgb(59, 255, 59);
+    animation-name: border;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+.text-5-box-3{
+    border-radius: 50%;
+    border-bottom: 11px groove red;
+    border-top: 11px groove red;
+    text-shadow: 1px 1px 3px red;
+    animation-name: border;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+.text-5-box-4{
+    border-radius: 50%;
+    border-bottom: 11px groove yellow;
+    border-top: 11px groove yellow;
+    text-shadow: 1px 1px 3px yellow;
+    animation-name: border;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+.main3{
+    margin-top: 30px;
+    color: white;
+}
+.text-30{
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+    text-shadow: 0px 0px 3px red,0px 0px 6px red,0px 0px 9px red,0px 0px 12px red;
+}
+.text-40{
+    padding: 40px 80px;
+    font-size: medium;
+}
+
+.box-101{
+    margin-top: 100px;
+    color: white;
+}
+
+.text-101{
+    color: white;
+    
+}
+.text-102{
+    color: white;
+    font-size: 2.5rem;
+    margin: 12px 0px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px red,0px 0px 5px red,0px 0px 8px red,0px 0px 10px red;
+}
+.text-103{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 7px;
+    text-shadow: 0px 0px 2px lightblue,0px 0px 4px lightblue;
+}
+.text-104{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+.text-105{
+    color: white;
+    font-size: large;
+}
+.text-106{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 0px 0px 2px lightblue,0px 0px 4px lightblue;
+}
+.text-107{
+    font-size: larger;
+    margin: 5px 0px;
+    padding: 0px;
+}
+.text-108{
+    font-size: 1.4rem;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 0px 0px 2px lightblue,0px 0px 4px lightblue;
+    font-weight: bold;
+}
+.text-109{
+    margin: 5px 0px;
+    padding: 0px;
+    font-size: larger;
+}
+
+.gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+    height:550px;
+    width:550px;
+    
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    border-top-right-radius: 120px;
+    border-top-left-radius: 0;
+    box-shadow: 0px 0px 20px black,0px 0px 10px black,0px 0px 25px rgb(17, 0, 54);
+    
+}
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 700px;
+    width: 700px;
+    
+}
+
+@media only screen and (max-width:550px){
+    .main1{
+        height: 50vh;
+    }
+    .text-40{
+        padding: 40px 40px;
+        font-size: initial;
+    }
+    .text-15{
+        font-size: 2rem;
+    }
+    .text-5{
+        font-size: 1.7rem;
+    }
+    .main3{
+        margin-top: 10px;
+    }
+    .gmap_canvas{
+        margin-top: 50px;
+        height:550px;
+        width:380px;
+    }
+    .mapouter{
+        height: 600px;
+        width: 400px;
+    }
+}
+@media only screen and (max-width:1024px) and (min-width:800px){
+    .main1{
+        height: 50vh;
+    }
+    
+}
+@media only screen and (max-width:768px) and (min-width:551px){
+    .main1{
+        height: 50vh;
+    }
+}
+
+
+@keyframes border{
+    0%{
+        border-style: groove;
+        border-left: none;
+        border-right: none;
+    }
+    50%{
+        border-style: outset;
+        border-left: none;
+        border-right: none;
+    }
+    100%{
+        border-style: groove;
+        border-left: none;
+        border-right: none;
+    }
+}

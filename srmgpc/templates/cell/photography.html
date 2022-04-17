@@ -1,0 +1,212 @@
+{% extends 'basic.html' %}
+
+{% block title %}
+{{request.user}} || Admin || Abhivyakti'22
+{% endblock %}
+
+
+{% block css %}
+
+{% endblock %}
+
+
+{% block body %}
+<h4 class="p-5 text-center">Hello, <span class='text-uppercase'>{{request.user}}</span></h4>
+<div class="container bg-light border border-3 shadow table-responsive">
+    <h6 class="text-center text-uppercase py-3">Selfie Contest</h6>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">College</th>
+                <th scope="col">College RN</th>
+                <th scope="col">Phone</th>
+                <th scope="col">City</th>
+                <th scope="col">Date</th>
+                <th scope="col">Event</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in sc %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.college}}</td>
+                <td>{{i.college_rn}}</td>
+                <td>{{i.phone}}</td>
+                <td>{{i.city}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.event_name}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="container bg-light border border-3 mt-4 shadow table-responsive">
+    <h6 class="text-center text-uppercase py-3">Photo Film</h6>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">College</th>
+                <th scope="col">College RN</th>
+                <th scope="col">Phone</th>
+                <th scope="col">City</th>
+                <th scope="col">Date</th>
+                <th scope="col">Event</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in pf %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.college}}</td>
+                <td>{{i.college_rn}}</td>
+                <td>{{i.phone}}</td>
+                <td>{{i.city}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.event_name}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="container bg-light border border-3 mt-4 shadow table-responsive">
+    <h6 class="text-center text-uppercase py-3">Mobile Photography</h6>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">College</th>
+                <th scope="col">College RN</th>
+                <th scope="col">Phone</th>
+                <th scope="col">City</th>
+                <th scope="col">Date</th>
+                <th scope="col">Event</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in mp %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.college}}</td>
+                <td>{{i.college_rn}}</td>
+                <td>{{i.phone}}</td>
+                <td>{{i.city}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.event_name}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="container bg-light border border-3 mt-4 shadow table-responsive">
+    <h6 class="text-center text-uppercase py-3">Duet Photoshoot Contest</h6>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">College</th>
+                <th scope="col">College RN</th>
+                <th scope="col">Phone</th>
+                <th scope="col">City</th>
+                <th scope="col">Date</th>
+                <th scope="col">Event</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in dpc %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.college}}</td>
+                <td>{{i.college_rn}}</td>
+                <td>{{i.phone}}</td>
+                <td>{{i.city}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.event_name}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="container bg-light border border-3 mt-4 shadow table-responsive">
+    <h6 class="text-center text-uppercase py-3">Videography</h6>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">College</th>
+                <th scope="col">College RN</th>
+                <th scope="col">Phone</th>
+                <th scope="col">City</th>
+                <th scope="col">Date</th>
+                <th scope="col">Event</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in videography %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.college}}</td>
+                <td>{{i.college_rn}}</td>
+                <td>{{i.phone}}</td>
+                <td>{{i.city}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.event_name}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+<div class="container bg-light border border-3 mt-4 shadow table-responsive">
+    <h6 class="text-center text-uppercase py-3">Best Pose Contest</h6>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">College</th>
+                <th scope="col">College RN</th>
+                <th scope="col">Phone</th>
+                <th scope="col">City</th>
+                <th scope="col">Date</th>
+                <th scope="col">Event</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in bpc %}
+            <tr>
+                <td>{{i.name}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.college}}</td>
+                <td>{{i.college_rn}}</td>
+                <td>{{i.phone}}</td>
+                <td>{{i.city}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.event_name}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div class="d-flex justify-content-center mt-4">
+<a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+</div>
+
+{% endblock %}
+
+
+{% block js %}
+
+
+{% endblock %}

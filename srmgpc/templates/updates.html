@@ -1,0 +1,712 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital@1&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/updates.css' %}">
+
+  <title>Updates & Results || Abhivyakti'22</title>
+</head>
+
+<body>
+  {% include 'navbar.html' %}
+  <p class="text-1 text-center">UPDATES & RESULTS</p>
+  <div class="container-fluid main-1">
+    <div class="row">
+      <div class="col-md-3 main-2">
+        <p class="text-start text-21">Important Updates:</p>
+        <div class="box-21">
+          {% for i in update reversed %}
+          <p class="px-3 text-22">{{i.news_detail}}</p>
+          <small class="text-end px-3"><span class="span"> - {{i.update_time}}, {{i.update_date}}</span></small>
+          {% endfor %}
+
+        </div>
+
+      </div>
+      <div class="col-md-9 main-3">
+        <p class="text-31 text-start">Results:</p>
+
+        <div class="box-31">
+
+
+          <div class="main-4">
+            <p class="text-41 text-center">Choreography Cell</p>
+            <div class="row">
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Solista</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in solista %}
+                <div class="d-flex justify-content-between">
+                  <p class="px-3">{{i.name}}</p>
+                  <p class="px-3">{{i.college}}</p>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Squadron</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in squadron %}
+                <div class="d-flex justify-content-between">
+                  <p class="px-3">{{i.name}}</p>
+                  <p class="px-3">{{i.college}}</p>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Impromptu</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in impromptu %}
+                <div class="d-flex justify-content-between">
+                  <p class="px-3">{{i.name}}</p>
+                  <p class="px-3">{{i.college}}</p>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+          <div class="main-4">
+            <p class="text-41 text-center">Euphony Cell</p>
+            <div class="row">
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Swarjeet</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in swarjeet %}
+                <div class="d-flex justify-content-between">
+                  <p class="px-3">{{i.name}}</p>
+                  <p class="px-3">{{i.college}}</p>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Swarmel</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in swarmel %}
+                <div class="d-flex justify-content-between">
+                  <p class="px-3">{{i.name}}</p>
+                  <p class="px-3">{{i.college}}</p>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Crooner</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in crooner %}
+                <div class="d-flex justify-content-between">
+                  <p class="px-3">{{i.name}}</p>
+                  <p class="px-3">{{i.college}}</p>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+          <div class="main-4">
+            <p class="text-41 text-center">Dracula Cell</p>
+            <div class="row">
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Mono Act</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in mono_act %}
+                <div class="d-flex justify-content-between">
+                  <p class="px-3">{{i.name}}</p>
+                  <p class="px-3">{{i.college}}</p>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Kavya-Ansh</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in kavyaansh %}
+                <div class="d-flex justify-content-between">
+                  <p class="px-3">{{i.name}}</p>
+                  <p class="px-3">{{i.college}}</p>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Ad-Mad</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in ad_mad %}
+                <div class="d-flex justify-content-between">
+                  <p class="px-3">{{i.name}}</p>
+                  <p class="px-3">{{i.college}}</p>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Rangbaazi</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in rangbaazi %}
+                <div class="d-flex justify-content-between">
+                  <p class="px-3">{{i.name}}</p>
+                  <p class="px-3">{{i.college}}</p>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+
+          <div class="main-4">
+            <p class="text-41 text-center">Literati Cell</p>
+            <div class="row">
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Graffiti</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in graffiti %}
+                <div class="d-flex justify-content-between">
+                  <p class="px-3">{{i.name}}</p>
+                  <p class="px-3">{{i.college}}</p>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Group Discussion</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in gd %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Debate</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in debate %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Maymay Mania</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in mm %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Trivia Fever</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in tf %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">PPD</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in ppd %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Pictionary</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in pictionary %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Twist & Tale</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in tt %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Open Mic</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in om %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Reader's Circle</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in rc %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Scripturesqueue</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in sq %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">JAM</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in jam %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Doodler's Combat</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in dc %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+
+          <div class="main-4">
+            <p class="text-41 text-center">Creative Canvas Club</p>
+            <div class="row">
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Art Gallery</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in ag %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Black & White</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in bnw %}
+                <div class="d-flex justify-content-between">
+                  <p class="px-3">{{i.name}}</p>
+                  <p class="px-3">{{i.college}}</p>
+                </div>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Theme Painting</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in tp %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">On spot pencil sketching</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in osps %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Paint & Spray</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in pns %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Rangoli</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in rangoli %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+
+          <div class="main-4">
+            <p class="text-41 text-center">Newspaper Cell</p>
+            <div class="row">
+              <div class="col-md-4">
+                <h4 class="text-center text-42">You Peek I Answer</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in ypia %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Fun Quiz</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in fq %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Cube Gamble</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+                {% for i in cg %}
+                <p class="d-flex justify-content-between px-3"><span>{{i.name}}</span><span>{{i.college}}</span></p>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+          <div class="main-4">
+            <p class="text-41 text-center">Photography Cell</p>
+            <div class="row">
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Selfie Contest</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Photo Film</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Mobile Photography</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Duet Photoshoot Contest</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4 box-41 mt-5">
+                <h4 class="text-center text-42">Videography</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4 mt-5">
+                <h4 class="text-center text-42">Best Pose Contest</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-4">
+            <p class="text-41 text-center">Media Cell</p>
+            <div class="row">
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Mascot Drawing</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Flex Making</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">RJ Hunt</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-4">
+            <p class="text-41 text-center">Informal Cell</p>
+            <div class="row">
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Musical Chairs</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Tug of War</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Housie</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Kho-Kho</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Cricket</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Kite War</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Three Legged Race</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Three Legged Race</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Three Legged Race</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Three Legged Race</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Three Legged Race</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Three Legged Race</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="main-4">
+            <p class="text-41 text-center">Literati Cell</p>
+            <div class="row">
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Open Mic</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Turn Coat</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Debate</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Dumb Charades</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Samadhaan</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Trivia</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Samadhaan</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="main-4">
+            <p class="text-41 text-center">NPC Cell</p>
+            <div class="row">
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">Musical Chair</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4 box-41">
+                <h4 class="text-center text-42">T Shirt Painting</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h4 class="text-center text-42">Ring Throw</h4>
+                <div class="d-flex justify-content-between">
+                  <p class="px-3 fw-bold">Name</p>
+                  <p class="px-3 fw-bold">College</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

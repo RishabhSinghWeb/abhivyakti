@@ -1,0 +1,342 @@
+body{
+    background: url(../main5.jpg);
+    background-position: fixed;
+    background-size: cover;
+    background-attachment:fixed;
+
+}
+:root {
+    --cyan: cyan;
+    --white: #ffffff;
+    transition: 0.5s;
+}
+hr{
+    color: white;
+    padding: 2px;
+}
+.cont{
+    position: sticky;
+    top: 0px;
+    background-color: transparent;
+    z-index: 1.5;
+}
+.img-5{
+    position: absolute;
+    top: 16px ;
+    left: 17px;
+}
+.text-5{
+    color:white;
+    font-weight: bold;
+}
+.text-15{
+    color: white;
+    padding: 12px 0px;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+    border-top: 2px solid gray;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    /* font-size: 1.5rem;
+    
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid gray; */
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 350px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 98px; /* Stay at the top */
+    left: 0;
+    background-color: transparent; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    /* padding-top: 60px; Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    border-top-right-radius: 20px;
+}
+.sidenav::-webkit-scrollbar{
+    width: 5px;
+    
+}
+.sidenav::-webkit-scrollbar-track {
+    background: transparent;
+}
+.sidenav::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    background: var(--cyan);
+    
+}
+.sidenav::-webkit-scrollbar-thumb:hover {
+    background: rgb(32, 134, 134);
+}
+
+
+
+.main-10{
+    position: fixed;
+    display: inline;
+    /* bottom: 60px; */
+    background-color: transparent;
+    color: var(--cyan);
+    /* box-shadow: 0px 0px 10px cyan inset; */
+    left: 350px;
+    font-size: 3rem;
+    top: 95px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.open{
+    /* position: relative; */
+    /* bottom: 60px; */
+    /* left: 350px;
+    top: 20px; */
+    padding: 0px 6px 0px 6px;
+    transition: 0.5s;
+    display: none;
+    position: relative;
+    bottom: 10px;
+    
+}
+.closebtn{
+    
+    padding: 0px 6px 0px 6px;
+    transition: 0.5s;
+    position: relative;
+    bottom: 10px;
+    
+}
+.sidenav .link-sidenav{
+    list-style: none;
+    
+    position: relative;
+    bottom: 10px;
+    
+    color: #fffafa;
+    display: block;
+    background-color: transparent;
+    transition: 0.3s;
+    margin-top: 0px;
+    padding-top: 0px;
+    
+}
+.sidenav .link-sidenav .link-sidenav-link{
+    font-family: 'Play', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--cyan);
+    font-size: 1.3rem;
+    box-shadow:0px 2px 3px gray;
+    padding: 8px 0px 10px 20px;
+    transition: 2s;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+
+}
+.link-sidenav-link:hover{
+    border-left: 4px solid var(--cyan);
+}
+
+
+.links-10{
+    display: none;
+}
+
+.links-10 .links-10-links{
+    font-family: 'Play', sans-serif;
+    font-style: oblique;
+    color: var(--cyan);
+    box-shadow: 0px 2px gray;
+    margin-left: 30px;
+    padding: 8px 0px 11px 20px;
+   font-size: 1.2rem;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+.links-10 .links-10-links:hover{
+    border-left: 4px solid var(--cyan);
+}
+.links-10 .links-10-links span{
+    font-style: normal;
+}
+
+.link99{
+    display: none;
+}
+.link99 li{
+    font-family: 'Play', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--cyan);
+    box-shadow: 0px 2px gray;
+    margin-left: 60px;
+    padding: 8px 0px 11px 20px;
+    font-style: italic;
+   font-size: 1.1rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+.link99 li:hover{
+    border-left: 4px solid var(--cyan);
+}
+
+.span{
+    
+    position: relative;
+    top: 3px;
+    right: 15px;
+    transition: 0.3s;
+}
+.link99 li .span{
+    position: relative;
+    top: 3px;
+    right: 20px;
+    transition: 0.3s;
+}
+.span-rotate{
+    transition: 0.3s;
+    transform: rotate(90deg);
+}
+.span-rotate-reverse{
+    transition: 0.3s;
+    transform: rotate(-90deg);
+    color: orange;
+}
+
+
+
+
+#main {
+    transition: margin-left .5s;
+    /* padding: 70px; */
+    margin-left: 350px;
+    color: white;
+    z-index: 0.5;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 85vh;
+    
+}
+#main::-webkit-scrollbar{
+    width: 1px;
+    
+}
+#main::-webkit-scrollbar-track {
+    background: transparent;
+}
+#main::-webkit-scrollbar-thumb {
+    border-radius: 40px;
+    background: var(--cyan);
+    
+}
+#main::-webkit-scrollbar-thumb:hover {
+    background: rgb(32, 134, 134);
+}
+
+
+
+.main{
+    display: none;
+}
+
+.profiles{
+    margin-top: 40px;
+}
+.img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 20px var(--cyan); */
+    border: 5px double var(--cyan);
+    margin-top: 15px;
+    animation-name: gabbar;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-iteration-count: 1;
+}
+.text77{
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0px 1px 3px var(--cyan);
+    
+}
+.text66{
+    font-family: 'Titillium Web', sans-serif;
+    color: var(--cyan);
+}
+.name{
+    margin-top: 7px;
+    margin-bottom: 0px;
+    font-size: larger;
+    font-weight: bold;
+}
+.icon-link{
+    filter: invert(100%);
+    box-shadow: 0px 0px 1px white inset;
+}
+.icons{
+    box-shadow: 0px 0px 1pc var(--cyan);
+    
+}
+.cord{
+    display: none;
+}
+.acord{
+    display: none;
+}
+.cell{
+    display: none;
+}
+
+@keyframes gabbar{
+    0%{
+        transform: rotateY(0deg);
+    }
+    
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+
+@media only screen and (max-width:600px){
+    .sidenav{
+        width: 250px;
+    }
+    .sidenav .link-sidenav .link-sidenav-link{
+        font-size: 1.1rem;
+    }
+    .main-10{
+        position: fixed;
+        display: inline;
+        
+        color: var(--cyan);
+        /* box-shadow: 0px 0px 10px cyan inset; */
+        left: 250px;
+        font-size: 3rem;
+        top: 95px;
+        
+        
+        
+        
+    }
+    #main {
+        transition: margin-left .5s;
+        /* padding: 70px; */
+        margin-left: 250px;
+        
+        
+    }
+    
+}

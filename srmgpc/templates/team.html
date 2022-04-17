@@ -1,0 +1,1118 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font stylee -->
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/team.css' %}">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <title>The Team || Abhivyakti'22</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <div class="cont">
+        <h1 class="text-center py-5 fw-bold" style="color: cyan;">OUR TEAM</h1>
+    </div>
+
+
+    <!-- sidenav -->
+    <div id="mySidenav" class="sidenav">
+        <h4 class="text-center text-15">Team Members</h4>
+        <div class="link-sidenav">
+            <li class="link-sidenav-link list1">Faculty Convenor<span class="span span1">></span></li>
+            <li class="link-sidenav-link list2">Joint Faculty Convenor<span class="span span2">></span></li>
+            <li class="link-sidenav-link list3" id="convenors">Convenors<span class="span span3">></span></li>
+
+            <li class="link-sidenav-link list4">Veteran Convenors<span class="span span4">></span></li>
+            <li class="link-sidenav-link list5">Joint Convenors<span class="span span5">></span></li>
+            <li class="link-sidenav-link list6">Asst. Convenors<span class="span span6">></span></li>
+
+            <li class="link-sidenav-link list7">Executive Coordinators<span class="span span7">></span></li>
+            <li class="link-sidenav-link list8" id="coordinators">Coordinators<span class="span span8">></span></li>
+            <div class="links-10">
+                <li class="links-10-links li1" id="choreo-links">Choreography Cell<span class="span sp1">></span></li>
+                <div class="choreo-links link99">
+                    <li class="cord-1">Coordinators<span class="span">></span></li>
+                    <li class="acord-1">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li2" id="euphony-links">Euphony Cell<span class="span sp2">></span></li>
+                <div class="euphony-links link99">
+                    <li class="cord-2">Coordinators<span class="span">></span></li>
+                    <li class="acord-2">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li3" id="draco-links">Dracula Cell<span class="span sp3">></span></li>
+                <div class="draco-links link99">
+                    <li class="cord-3">Coordinators<span class="span">></span></li>
+                    <li class="acord-3">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li4" id="rit-links">Ritumbhara Cell<span class="span sp4">></span></li>
+                <div class="rit-links link99">
+                    <li class="cord-4">Coordinators<span class="span">></span></li>
+                    <li class="acord-4">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li5" id="photo-links">Photography Cell<span class="span sp5">></span></li>
+                <div class="photo-links link99">
+                    <li class="cord-5">Coordinators<span class="span">></span></li>
+                    <li class="acord-5">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li6" id="media-links">Media Cell<span class="span sp6">></span></li>
+                <div class="media-links link99">
+                    <li class="cord-6">Coordinators<span class="span">></span></li>
+                    <li class="acord-6">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li7" id="compare-links">Compairing Cell<span class="span sp7">></span></li>
+                <div class="compare-links link99">
+                    <li class="cord-7">Coordinators<span class="span">></span></li>
+                    <li class="acord-7">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li8" id="deco-links">Decoration Cell<span class="span sp8">></span></li>
+                <div class="deco-links link99">
+                    <li class="cord-8">Coordinators<span class="span">></span></li>
+                    <li class="acord-8">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li9" id="ccc-links">Creative Canvas Club<span class="span sp9">></span></li>
+                <div class="ccc-links link99">
+                    <li class="cord-9">Coordinators<span class="span">></span></li>
+                    <li class="acord-9">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li10" id="info-links">Informal Cell<span class="span sp10">></span></li>
+                <div class="info-links link99">
+                    <li class="cord-10">Coordinators<span class="span">></span></li>
+                    <li class="acord-10">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li11" id="lit-links">Literati Cell<span class="span sp11">></span></li>
+                <div class="lit-links link99">
+                    <li class="cord-11">Coordinators<span class="span">></span></li>
+                    <li class="acord-11">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li12" id="npc-links">NPC Cell<span class="span sp12">></span></li>
+                <div class="npc-links link99">
+                    <li class="cord-12">Coordinators<span class="span">></span></li>
+                    <li class="acord-12">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li13" id="sec-links">Security Cell<span class="span sp13">></span></li>
+                <div class="sec-links link99">
+                    <li class="cord-13">Coordinators<span class="span">></span></li>
+                    <li class="acord-13">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li14" id="contro-links">Control Cell<span class="span sp14">></span></li>
+                <div class="contro-links link99">
+                    <li class="cord-14">Coordinators<span class="span">></span></li>
+                    <li class="acord-14">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li15" id="epc-links">External Publicity Cell<span class="span sp15">></span>
+                </li>
+                <div class="epc-links link99">
+                    <li class="cord-15">Coordinators<span class="span">></span></li>
+                    <li class="acord-15">Assistant Coordinators<span class="span">></span></li>
+                </div>
+                <li class="links-10-links li16" id="ipc-links">Internal Publicity Cell<span class="span sp16">></span>
+                </li>
+                <div class="ipc-links link99">
+                    <li class="cord-16">Coordinators<span class="span">></span></li>
+                    <li class="acord-16">Assistant Coordinators<span class="span">></span></li>
+                </div>
+            </div>
+            <li class="link-sidenav-link list9">Controller (Administration)<span class="span span9">></span></li>
+            <li class="link-sidenav-link list10">Controller (Computer Network)<span class="span span10">></span></li>
+            <li class="link-sidenav-link list11">Finance and Procurement Controller<span class="span span11">></span>
+            </li>
+
+        </div>
+    </div>
+
+    <div class="main-10" id="main-10">
+        <span onclick="openSide()" class="open" id="open">&apid;</span>
+        <span onclick="closeSide()" class="closebtn" id="close">&apid;</span>
+
+    </div>
+    <!-- page content -->
+    <div id="main">
+
+        <div class="main main1">
+            <h2 class="text-center text66 mt-4">Faculty Convenor</h2>
+            <div class="row profiles">
+
+
+                {% for i in faculty_convenors %}
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <img src="{% static 'profile.png' %}" alt="" class="img">
+                    <p class="name">{{i.name}}</p>
+
+
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="main main2">
+            <h3 class="text-center text66 mt-4">Joint Faculty Convenor</h3>
+            <div class="row profiles">
+
+
+                {% for i in joint_faculty %}
+                <div class="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <img src="{% static 'profile.png' %}" alt="" class="img">
+                    <p class="name">{{i.name}}</p>
+
+
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="main main3">
+            <h3 class="text-center text66 mt-4">Convenors</h3>
+            <div class="row profiles">
+                {% for i in convenors %}
+                <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <img src="{{i.profile_pic.url}}" alt="" class="img">
+                    <p class="name">{{i.name}}</p>
+                    <p class="branch">{{i.branch}} ({{i.year}})</p>
+                    <p class="icons">
+                        <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt="" class="icon-link"></a>
+                        <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt="" class="icon-link"></a>
+                        <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt="" class="icon-link"></a>
+                    </p>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+        <div class="main main4">
+            <h3 class="text-center text66 mt-4">Veteran Convenors</h3>
+            <div class="row profiles">
+                {% for i in veteran_convenors %}
+                <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <img src="{{i.profile_pic.url}}" alt="" class="img">
+                    <p class="name">{{i.name}}</p>
+                    <p class="branch">{{i.branch}} ({{i.year}})</p>
+                    <p class="icons">
+                        <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt="" class="icon-link"></a>
+                        <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt="" class="icon-link"></a>
+                        <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt="" class="icon-link"></a>
+                    </p>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+        <div class="main main5">
+            <h3 class="text-center text66 mt-4">Joint Convenors</h3>
+            <div class="row profiles">
+                {% for i in joint_convenors %}
+                <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <img src="{{i.profile_pic.url}}" alt="" class="img">
+                    <p class="name">{{i.name}}</p>
+                    <p class="branch">{{i.branch}} ({{i.year}})</p>
+                    <p class="icons">
+                        <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt="" class="icon-link"></a>
+                        <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt="" class="icon-link"></a>
+                        <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt="" class="icon-link"></a>
+                    </p>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+        <div class="main main6">
+            <h3 class="text-center text66 mt-4">Assistant Convenors</h3>
+            <div class="row profiles">
+                {% for i in asst_convenors %}
+                <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <img src="{{i.profile_pic.url}}" alt="" class="img">
+                    <p class="name">{{i.name}}</p>
+                    <p class="branch">{{i.branch}} ({{i.year}})</p>
+                    <p class="icons">
+                        <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt="" class="icon-link"></a>
+                        <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt="" class="icon-link"></a>
+                        <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt="" class="icon-link"></a>
+                    </p>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+        <div class="main main7">
+            <h3 class="text-center text66 mt-4">Executive Coordinator</h3>
+            <div class="row profiles">
+                {% for i in exe_convenors %}
+                <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                    <img src="{{i.profile_pic.url}}" alt="" class="img">
+                    <p class="name">{{i.name}}</p>
+
+                    {% endfor %}
+
+                </div>
+            </div>
+
+            <div class="main main8">
+
+                <div class="cell cell1">
+                    <h1 class="text-center text66 mt-4">Choreography Cell</h1>
+                    <div class="cord cord1">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in choreography %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord1">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in choreography %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell2">
+                    <h1 class="text-center text66 mt-4">Euphony Cell</h1>
+                    <div class="cord cord2">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in euphony %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord2">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in euphony %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell3">
+                    <h1 class="text-center text66 mt-4">Dracula Cell</h1>
+                    <div class="cord cord3">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in draco %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord3">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in draco %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell4">
+                    <h1 class="text-center text66 mt-4">Ritumbhara Cell</h1>
+                    <div class="cord cord4">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in ritumbhara %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord4">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in ritumbhara %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell5">
+                    <h1 class="text-center text66 mt-4">Photography Cell</h1>
+                    <div class="cord cord5">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in photography %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord5">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in photography %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell6">
+                    <h1 class="text-center text66 mt-4">Media Cell</h1>
+                    <div class="cord cord6">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in media %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord6">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in media %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell7">
+                    <h1 class="text-center text66 mt-4">Compairing Cell</h1>
+                    <div class="cord cord7">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in compairing %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord7">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in compairing %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell8">
+                    <h1 class="text-center text66 mt-4">Decoration Cell</h1>
+                    <div class="cord cord8">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in decoration %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord8">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in decoration %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell9">
+                    <h1 class="text-center text66 mt-4">Creative Canvas Club</h1>
+                    <div class="cord cord9">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in creative %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord9">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in creative %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell10">
+                    <h1 class="text-center text66 mt-4">Informal Cell</h1>
+                    <div class="cord cord10">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in informal %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord10">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in informal %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell11">
+                    <h1 class="text-center text66 mt-4">Literati Cell</h1>
+                    <div class="cord cord11">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in literati %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord11">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in literati %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell12">
+                    <h1 class="text-center text66 mt-4">NPC Cell</h1>
+                    <div class="cord cord12">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in npc %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord12">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in npc %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell13">
+                    <h1 class="text-center text66 mt-4">Security Cell</h1>
+                    <div class="cord cord13">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in security %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord13">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in security %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell14">
+                    <h1 class="text-center text66 mt-4">Control Cell</h1>
+                    <div class="cord cord14">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in control %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord14">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in control %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell15">
+                    <h1 class="text-center text66 mt-4">External Publicity Cell</h1>
+                    <div class="cord cord15">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in epc %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord15">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in epc %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cell cell16">
+                    <h1 class="text-center text66 mt-4">Internal Publicity Cell</h1>
+                    <div class="cord cord16">
+                        <h3 class="text-center text77 pt-2">Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in ipc %}
+                            {% if i.cell_post == 'Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="acord acord16">
+                        <h3 class="text-center text77 py-2">Assistant Coordinators</h3>
+                        <div class="row profiles">
+                            {% for i in ipc %}
+                            {% if i.cell_post == 'Assistant Coordinator' %}
+                            <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+                                <p class="branch">{{i.branch}} ({{i.year}})</p>
+                                <p class="icons">
+                                    <a href="{{i.linkedin}}"><img src="{% static 'linkedin.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.instagram}}"><img src="{% static 'instagram2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                    <a href="{{i.faceboook}}"><img src="{% static 'facebook2.png' %}" alt=""
+                                            class="icon-link"></a>
+                                </p>
+                            </div>
+                            {% endif %}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main main9">
+                <h3 class="text-center text66">Controller (Administration)</h3>
+                <div class="row profiles">
+                    {% for i in controller_ad %}
+                    <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                        <img src="{{i.profile_pic.url}}" alt="" class="img">
+                        <p class="name">{{i.name}}</p>
+
+                        {% endfor %}
+
+                    </div>
+                </div>
+                <div class="main main10">
+                    <h3 class="text-center text66">Controller (Computer Network)</h3>
+                    <div class="row profiles">
+                        {% for i in controller_cn %}
+                        <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                            <img src="{{i.profile_pic.url}}" alt="" class="img">
+                            <p class="name">{{i.name}}</p>
+
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="main main11">
+                        <h3 class="text-center text66">Finance and Procurement Controller</h3>
+                        <div class="row profiles">
+                            {% for i in finance_controller %}
+                            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                                <img src="{{i.profile_pic.url}}" alt="" class="img">
+                                <p class="name">{{i.name}}</p>
+
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Optional JavaScript; choose one of the two! -->
+                    <script src="{% static 'js/team.js' %}"></script>
+                    <!-- Option 1: Bootstrap Bundle with Popper -->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+                        crossorigin="anonymous"></script>
+
+                    <!-- Option 2: Separate Popper and Bootstrap JS -->
+                    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

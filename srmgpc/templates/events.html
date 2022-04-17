@@ -1,0 +1,569 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/events.css' %}">
+
+    <title>Events || Abhivyakti'22</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+
+
+    <div class="parallax">
+        <h1 class="text-white pt-md-5 pt-5 pl-md-5 pl-4 head1 headings">Choreography<br>Cell</h1>
+        <div class="mt-md-5 mt-4 d-flex justify-content-start pl-md-5 pl-4">
+            <p class="text-white pr-5 text-start">Dance is integral to being human. It's an art form that has
+                transcended cultures across millennia. The choreography cell remains active throughout the year by
+                organizing several events and taking part in various competitions. It marks the onset of the festive
+                season by organizing ‘DANDIYA NIGHTS’ every year and participates in inter-college cultural fests like
+                ANTARAGNI (IIT-Kanpur) and achieved 7th position in 2K19. The Choreography Cell gives a numerous number
+                of performances in ABHIVYAKTI, the cultural fest of SRMGPC. It also organizes solo and group dance
+                competitions. The cell has won ‘THE BEST CELL’ award in ABHIVYAKTI for the last 3 consecutive years.
+                Amidst the chaos and pressure, dancing keeps us motivated.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="mt-5">
+                <a href="{% url 'eventChoreography' %}" class="button1">Go to Events</a>
+            </div>
+            <div class="d-flex icon-left icon-choreo flex-column mx-0 px-0">
+                <a href="https://www.instagram.com/_choreography_club__srmgpc/" target="_blank"><img
+                        src="{% static 'instagram.png' %}" alt="" style="filter:invert(100%)"></a><br>
+                <a href="https://www.youtube.com/channel/UCN9oqPsqS6tFelg6NkLDPjA?view_as=subscriber"
+                    target="_blank"><img src="{% static 'youtube.png' %}" alt="" style="filter:invert(100%)"></a><br>
+                <a href="https://www.facebook.com/choreography.cell.3" target="_blank"><img
+                        src="{% static 'facebook.png' %}" alt="" style="filter:invert(100%)"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax2">
+        <h1 class="text-white pt-5 pr-md-5 pr-4 head2 text-right headings">Euphony<br>Cell</h1>
+        <div class="mt-md-5 mt-4 pr-md-5 d-flex justify-content-end pr-4 text-right">
+            <p class="text-white text-right pl-5">Whether you enjoy the Electric Waves or just the Soothing Classical
+                Music or something that falls in the middle, we have it all. The euphony cell originated in our college
+                in the year 2005. Since then it’s been developing and growing everyday. It provides a platform to so
+                many new talents to become part of this community and spread the magic of their huge talent. The cell
+                organizes which add sparkle to the dazzling fest like, Agaaz, Swarigini, Aawahan, Bonfire, Interlude and
+                many more. Music is the electrical soil in which the spirit lives, thinks and invents.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="d-flex icon-right icon-music flex-column p-0">
+                <a href="" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+            <div class="mt-5 text-right">
+                <a href="{% url 'eventEuphony' %}" class="button2">Go to Events</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax3">
+        <h1 class="text-white pt-md-5 pt-5 pl-md-5 pl-4 head3 headings">Draculla<br>Cell</h1>
+        <div class="mt-md-5 mt-4 d-flex justify-content-start pl-md-5 pl-4">
+            <p class="text-white pr-5 text-start">Dracula, the dramatic cell of college is appreciated by all. The
+                Dracula cell provides a platform to the students interested in learning more about the aspects of
+                theater. This includes learning stage terminology, working on acting skills, set building, and
+                costumes/makeup design. The cell encourages dramatic presentations by students in the form of skits,
+                mime, plays, nukkad natak etc. The cell has given various memorable performances based on different
+                genres such as patriotic, thriller, comedy and it continues.. The cell also organizes various
+                competitions like Street War, AD-MAD, Poetry, Rangbaazi etc.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="mt-5">
+                <a href="{% url 'eventDracula' %}" class="button1">Go to Events</a>
+            </div>
+            <div class="d-flex icon-left icon-choreo flex-column mx-0 px-0">
+                <a href="#" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax4">
+        <h1 class="text-white pt-5 pr-md-5 pr-4 head4 text-right headings">Ritumbhara<br>Cell</h1>
+        <div class="mt-md-5 mt-4 pr-md-5 d-flex justify-content-end pr-4 text-right">
+            <p class="text-white text-right pl-5">Ritumbhara cell is about the personality of an individual. The walk,
+                look, beauty, attitude, of the person is being judged and hence wins the title of various categories.
+                The cell has also won many awards. It shows creativity by its costume and sequences. Also, it is the
+                most awaited show of the night. Altogether it builds up confidence among the students.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="d-flex icon-right icon-compare flex-column p-0">
+                <a href="" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+            <div class="mt-5 text-right">
+                <a href="{% url 'eventRitumbhara' %}" class="button4">Go to Events</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax5">
+        <h1 class="text-white pt-md-5 pt-5 pl-md-5 pl-4 head5 headings">Photography<br>Cell</h1>
+        <div class="mt-md-5 mt-4 d-flex justify-content-start pl-md-5 pl-4">
+            <p class="text-white pr-5 text-start">It is an illusion that photos are made with the camera… they are made
+                with the eye, heart, and head. The photography cell provides a platform for the students to share and
+                exhibit their creativity, knowledge and passion for photography, to share and critique the photographs
+                of peers, to educate and improve technical skills, and to spread the love of photography throughout the
+                college. The cell conducts regular exhibitions, workshops and guest lectures to enhance aesthetic and
+                critical skills in photography.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="mt-5">
+                <a href="{% url 'eventPhotography' %}" class="button5">Go to Events</a>
+            </div>
+            <div class="d-flex icon-left icon-photo flex-column mx-0 px-0">
+                <a href="#" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax6">
+        <h1 class="text-white pt-md-5 pt-5 pr-md-5 pr-4 head6 text-right headings">Media<br>Cell</h1>
+        <div class="mt-md-5 mt-4 pr-md-5 d-flex justify-content-end pr-4 text-right">
+            <p class="text-white text-right pl-5">The Media Cell is dedicated to back support Abhivyakti year after year
+                behind the curtains. The chief duties of the cell include hosting events like Mascot Drawing
+                Competition(Emblems to be drawn on themes of Abhivyakti), Flex Making and RJ Hunt(Event for people who
+                can think fast and speak faster) that are judged by esteemed judges from inside or out campus. The
+                duties of the cell include Internal Publicity and External Publicity. Internal publicity includes making
+                on campus students aware of the details of the events happening during fests. External publicity
+                includes ruffling feathers of media survives like radio, newspaper etc.It also conducts press
+                conferences for guest celebrities as well as a fully fledged press release.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="d-flex icon-right icon-ccc flex-column p-0">
+                <a href="" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+            <div class="mt-5 text-right">
+                <a href="{% url 'eventMedia' %}" class="button6">Go to Events</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="parallax11">
+        <h1 class="text-white pt-md-5 pt-5 pl-md-5 pl-4 head11 headings">Literati<br>Cell</h1>
+        <div class="mt-md-5 mt-4 d-flex justify-content-start pl-md-5 pl-4">
+            <p class="text-white pr-5 text-start">The Literary club of SRMCEM organizes events that will certainly dig
+                your gyres deeper and at the same time it will amuse you to the fullest. The motto of our Literati club
+                is to take you towards the path where you can “Learn and Grow”. Each and every student participates with
+                zeal and fervor dedicating every iota of their energy in working for this club. Students share their
+                knowledge and skills and there is a constant vibe of enthusiasm in our club. The variety and the number
+                of competitions that the club offers is a trademark in itself. We at Literati offer competitions for
+                students of SRMCEM as well as for students from other colleges. The diversity is great and unique!</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="mt-5">
+                <a href="{% url 'eventLiterati' %}" class="button4">Go to Events</a>
+            </div>
+            <div class="d-flex icon-left icon-compare flex-column mx-0 px-0">
+                <a href="#" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax8">
+        <h1 class="text-white pt-md-5 pt-5 pr-md-5 pr-4 head8 text-right headings">Decoration<br>Cell</h1>
+        <div class="mt-md-5 mt-4 pr-md-5 d-flex justify-content-end pr-4 text-right">
+            <p class="text-white text-right pl-5">The Decoration Cell is a cell which makes the base and puts life to
+                the fests of SRMGPC. It is one of the best off stage cells and has won many awards. This cell in our
+                college originated in the year 2005.Since then it is becoming more and more creative. Every member of
+                the cell has a unique and tremendous talent which motivates new talents to come and be the part of this
+                family. Altogether we make the college lighten up and beautiful.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="d-flex icon-right icon-photo flex-column p-0">
+                <a href="" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+            <div class="mt-5 text-right">
+                <a href="{% url 'eventDecoration' %}" class="button5">Go to Events</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax7">
+        <h1 class="text-white pt-md-5 pt-5 pl-md-5 pl-4 head7 headings">Creative<br>Canvas<br>Club</h1>
+        <div class="mt-md-5 mt-4 d-flex justify-content-start pl-md-5 pl-4">
+            <p class="text-white pr-5 text-start">The Creative Canvas Cell is a club with precise coordination,
+                extraordinary results having hope to bring life to our cultural fest “Abhivyakti”. This club is
+                originated in our college with a hope and purpose to explore art and makes everything beautiful just by
+                using creativity with canvas. Every member of the club has a unique and excellent talent of playing with
+                arts which motivates new talents to come and be the part of this club. This club also won many awards in
+                Abhivyakti such as best board and best garden decorator.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="mt-5">
+                <a href="{% url 'eventCreative' %}" class="button7">Go to Events</a>
+            </div>
+            <div class="d-flex icon-left icon-ccc flex-column mx-0 px-0">
+                <a href="#" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax12">
+        <h1 class="text-white pt-md-5 pt-5 pr-md-5 pr-4 head12 text-right headings">Newspaper<br>Cell</h1>
+        <div class="mt-md-5 mt-4 pr-md-5 d-flex justify-content-end pr-4 text-right">
+            <p class="text-white text-right pl-5">On the Outside, we could appear a bunch of overexcited nerds too keen
+                to publish a lousy newspaper that only the faculty and administrators read. But looks can be deceiving.
+                Yes, we don’t have the glamor and glitter of the On Stage cells like Dracula, Euphony, Steps or FS, but
+                we have a fair share of aces up our sleeves. From the intellectual task of writing a newspaper to
+                conducting fiery sports like Kabaddi, to organizing a fashion show on its own, to entertaining the
+                faculty with events like Tambola and Musical Chair, We are the NPC that can do it all. This is the cell
+                who would surely win your hearts, again and again, for years to come.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="d-flex icon-right icon-photo flex-column p-0">
+                <a href="" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+            <div class="mt-5 text-right">
+                <a href="{% url 'eventNewspaper' %}" class="button5">Go to Events</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="parallax9">
+        <h1 class="text-white pt-md-5 pt-5 pl-md-5 pl-4 head9 headings">Compairing<br>Cell</h1>
+        <div class="mt-md-5 mt-4 d-flex justify-content-start pl-md-5 pl-4">
+            <p class="text-white pr-5 text-start">As we know, actions speak louder than words, but the cell expresses
+                through words and binds the audience. The wiwa cell hitches the hearts and souls of the audience to the
+                events. Gives an amusing invention of the events, ensuring a boost to the adrenaline rush. Assures the
+                drums of heartbeats merge with the excitement around. Binds the audience in the spectrum of vivid
+                cultural performances and ceremonies. Clinch laughter and smiles with their scripts full of gags even in
+                the absence of events. It embeds creativity in its scripts to make the audience more acquainted with the
+                theme.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="mt-5">
+                <a href="{% url 'eventCompairing' %}" class="button4">Go to Events</a>
+            </div>
+            <div class="d-flex icon-left icon-compare flex-column mx-0 px-0">
+                <a href="#" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax17">
+        <h1 class="text-white pt-md-5 pt-5 pr-md-5 pr-4 head7 text-right headings">Prize<br>Distribution<br>Cell</h1>
+        <div class="mt-md-5 mt-4 pr-md-5 d-flex justify-content-end pr-4 text-right">
+            <p class="text-white text-right pl-5">The Prize Distribution Cell is responsible for distributing prizes and
+                managing the overall Prize distribution to the winners of the different events conducted during the fest
+                by all the different cells.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="d-flex icon-right icon-ccc flex-column p-0">
+                <a href="" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+            <div class="mt-5 text-right">
+                <a class="button7">Go to Events</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax18">
+        <h1 class="text-white pt-md-5 pt-5 pl-md-5 pl-4 head1 headings">Stage<br>Cell</h1>
+        <div class="mt-md-5 mt-4 d-flex justify-content-start pl-md-5 pl-4">
+            <p class="text-white pr-5 text-start">Behind the scenes of every performing show, you’ll find a stage
+                manager hard at work. The cell acquaints themselves with all aspects to make sure plays, musicals, and
+                concerts all go off without a hitch. The Stage cell works with the crew—like the costume design,
+                lighting, and sound departments—throughout the rehearsal period to ensure a seamless performance once
+                the show opens which is essential throughout the entire run of the show as well.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="mt-5">
+                <a class="button1">Go to Events</a>
+            </div>
+            <div class="d-flex icon-left icon-choreo flex-column mx-0 px-0">
+                <a href="#" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax19">
+        <h1 class="text-white pt-md-5 pt-5 pr-md-5 pr-4 head4 text-right headings">Handicraft<br>Cell</h1>
+        <div class="mt-md-5 mt-4 pr-md-5 d-flex justify-content-end pr-4 text-right">
+            <p class="text-white text-right pl-5">The Handicraft Cell is the ultimate resource for crafting inspiration
+                and creative ideas. The cell provides a platform to develop aesthetic values and enhance the creative
+                skills and artistic talents of students. It helps members as an artist to understand their role in
+                creativity and cultural industries.The cell promotes and supports art enthusiasts to propagate and
+                contribute to special activities. The Handicraft cell evaluates and appreciates member’s efforts through
+                organizing different events.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="d-flex icon-right icon-compare flex-column p-0">
+                <a href="" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+            <div class="mt-5 text-right">
+                <a class="button4">Go to Events</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax20">
+        <h1 class="text-white pt-md-5 pt-5 pl-md-5 pl-4 head2 headings">Hospitality<br>Cell</h1>
+        <div class="mt-md-5 mt-4 d-flex justify-content-start pl-md-5 pl-4">
+            <p class="text-white pr-5 text-start">The Hospitality cell focuses on the application of management
+                principles in the field of hospitality during the fests. The cell involves overseeing the day-to-day
+                administrative, operational and other activities. The cell’s duties include generous and friendly
+                treatment of visitors and guests and hospitable treatment.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="mt-5">
+                <a class="button2">Go to Events</a>
+            </div>
+            <div class="d-flex icon-left icon-music flex-column mx-0 px-0">
+                <a href="#" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax10">
+        <h1 class="text-white pt-md-5 pt-5 pr-md-5 pr-4 head10 text-right headings">Informal<br>Cell</h1>
+        <div class="mt-md-5 mt-4 pr-md-5 d-flex justify-content-end pr-4 text-right">
+            <p class="text-white text-right pl-5">The Informal cell takes the responsibility to make Abhivyakti
+                interesting beyond the stage also. The cell provides a different dimension to the fest by organizing
+                various off-stage events like Cricket, Kite flying etc. that keep the audience engaged. The cell
+                organizes various competitions like Musical Chairs, Tug of War, Housie, Kho-Kho, Cricket, Kite War,
+                Darts, Chess, Lemon Race, Sack Race, Seven up Seven down, Three Legged Race, and many more</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="d-flex icon-right icon-photo flex-column p-0">
+                <a href="" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+            <div class="mt-5 text-right">
+                <a href="{% url 'eventInformal' %}" class="button5">Go to Events</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax13">
+        <h1 class="text-white pt-md-5 pt-5 pl-md-5 pl-4 head13 headings">Security<br>Cell</h1>
+        <div class="mt-md-5 mt-4 d-flex justify-content-start pl-md-5 pl-4">
+            <p class="text-white pr-5 text-start">Security is the degree of resistance to, or protection from harm. It
+                applies to any vulnerable and valuable assets, such as a person, dwelling, community, item, nation or
+                organization. Security provides ‘A form of protection where a separation is created between the assets
+                and the threats.’ And sometimes includes changes to the assets or the threats. This is what we try to
+                achieve (Security Cell).</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="mt-5">
+                <a href="#" class="button4">Go to Events</a>
+            </div>
+            <div class="d-flex icon-left icon-compare flex-column mx-0 px-0">
+                <a href="#" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax14">
+        <h1 class="text-white pt-md-5 pt-5 pr-md-5 pr-4 head14 text-right headings">Control<br>Cell</h1>
+        <div class="mt-md-5 mt-4 pr-md-5 d-flex justify-content-end pr-4 text-right">
+            <p class="text-white text-right pl-5">The Control cell is responsible for smooth conduction of various fests
+                in our college. The cell carries the list of all the events which will be held during the cultural fest
+                “Abhivyakti" in the upcoming days. The cell is responsible for the registrations of individuals in all
+                the events of the respective cell. The contestants registering from outside our college are first
+                registered on the Control desk and are provided with a registration slip. The slip makes them eligible
+                to perform and participate in Abhivyakti.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="d-flex icon-right icon-control flex-column p-0">
+                <a href="" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+            <div class="mt-5 text-right">
+                <a class="button14">Go to Events</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax15">
+        <h1 class="text-white pt-md-5 pt-5 pl-md-5 pl-4 head15 headings">External<br>Publicity<br>Cell</h1>
+        <div class="mt-md-5 mt-4 d-flex justify-content-start pl-md-5 pl-4">
+            <p class="text-white pr-5 text-start">The External Publicity Cell plays a significant role in bringing about
+                the cultural fest of the college ‘Abhivyakti’. External publicity cell brings sponsorship from different
+                companies and organizations in order to facilitate the program and to coordinate and cooperate in the
+                happening of the event. The cell has brought sponsorship from various organizations like “FBB”,
+                “SHOPPER’S STOP”, “SUBWAY”, “CETPA”, “MADE EASY” etc. The cell always remains determined to enhance
+                their work through their hard work to bring sponsors to make the fest magnificent and astonishing each
+                time.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="mt-5">
+                <a class="button5">Go to Events</a>
+            </div>
+            <div class="d-flex icon-left icon-photo flex-column mx-0 px-0">
+                <a href="#" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax16">
+        <h1 class="text-white pt-md-5 pt-5 pr-md-5 pr-4 head16 text-right headings">Internal<br>Publicity Cell</h1>
+        <div class="mt-md-5 mt-4 pr-md-5 d-flex justify-content-end pr-4 text-right">
+            <p class="text-white text-right pl-5">The Internal Publicity cell focuses on the publicity of Abhivyakti and
+                all the events as well as competitive events and encourages the students to participate in the events in
+                Abhivyakti. The cell events include - IPC RALLY (The IPC cell conducts a Rally in the college campus
+                promoting Abhivyakti 2k20 and encouraging the students to take interest and participate in the
+                particular events they like.), Talent Hunt (The cell conducts an interesting event on the day when 1st
+                zero period is issued. The event is held on the basketball court in which the participants perform and
+                show their particular talent and each participant is given a chocolate or frooti).</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="d-flex icon-right icon-music flex-column p-0">
+                <a href="" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+            <div class="mt-5 text-right">
+                <a class="button2">Go to Events</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax21">
+        <h1 class="text-white pt-md-5 pt-5 pl-md-5 pl-4 head7 headings">Infrastructure<br>Cell</h1>
+        <div class="mt-md-5 mt-4 d-flex justify-content-start pl-md-5 pl-4">
+            <p class="text-white pr-5 text-start">The infrastructure cell’s responsibilities comprises the various
+                facilities and services that are required as part of the event which may include tents, lights,
+                electricity, etc.</p>
+        </div>
+        <div class="p-md-5 p-4 d-flex justify-content-between">
+            <div class="mt-5">
+                <a class="button7">Go to Events</a>
+            </div>
+            <div class="d-flex icon-left icon-ccc flex-column mx-0 px-0">
+                <a href="#" target="_blank"><img src="{% static 'instagram.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'youtube.png' %}" alt=""
+                        style="filter:invert(100%)"></a><br>
+                <a href="#" target="_blank"><img src="{% static 'facebook.png' %}" alt=""
+                        style="filter:invert(100%)"></a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

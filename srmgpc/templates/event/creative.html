@@ -1,0 +1,292 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/event/creativee.css' %}">
+
+    <title>Creative Canvas Club || Events || Abhivyakti'22</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+
+    <p class="text-1 text-center">Creative Canvas Club</p>
+    <div class="main-1">
+        <p class="text-11 text-center">Competitive Events</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'artgallery.jpg' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Art Gallery</h3>
+                        <div class="box-12 overflow-box1">
+
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in artgallery_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{artgallery.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{artgallery.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{artgallery.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow1">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Creative_Canvas_Club/Art_Gallery/solo/" class="text-15">Register Now</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'baw.jpg' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Black & White</h3>
+                        <div class="box-12 overflow-box2">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in baw_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{baw.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{baw.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{baw.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow2">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Creative_Canvas_Club/Black_&_White/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'sketch.jpg' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">On spot pencil sketching</h3>
+                        <div class="box-12 overflow-box3">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in pencilsketching_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{pencilsketching.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{pencilsketching.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{pencilsketching.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow3">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Creative_Canvas_Club/On_Spot_Pencil_Sketching/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center box-4">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'painting.jpg' %}" alt="" class="img-11 img-fluid">
+                        <p class="text-12 text-12-ex text-center py-2">Theme Painting</p>
+                        <div class="box-12 overflow-box4">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in themepainting_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{themepainting.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{themepainting.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{themepainting.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow4">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Creative_Canvas_Club/Theme_Painting/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center box-4">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'spray.jpg' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Paint & Spray</h3>
+                        <div class="box-12 overflow-box6">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in paintnspray_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{paintnspray.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{paintnspray.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{paintnspray.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow6">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Creative_Canvas_Club/Paint_&_Spray/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center box-4">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'rangoli.jpg' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Rangoli</h3>
+                        <div class="box-12 overflow-box5">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in rangoli_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{rangoli.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{rangoli.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{rangoli.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow5">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="#" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-1 main-2">
+        <p class="text-center text-11">Performing Events</p>
+        <div class="container">
+
+            <ul class="text-21">
+                {% for i in ccc %}
+                <li class="text-22"><span class="text-23">{{i.name}} :</span> {{i.about}}</li>
+                {% endfor%}
+            </ul>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.overflow1').click(function () {
+                $('.overflow-box1').toggleClass('box-121');
+            });
+            $('.overflow2').click(function () {
+                $('.overflow-box2').toggleClass('box-121');
+            });
+            $('.overflow3').click(function () {
+                $('.overflow-box3').toggleClass('box-121');
+            });
+            $('.overflow4').click(function () {
+                $('.overflow-box4').toggleClass('box-121');
+            });
+            $('.overflow5').click(function () {
+                $('.overflow-box5').toggleClass('box-121');
+            });
+            $('.overflow6').click(function () {
+                $('.overflow-box6').toggleClass('box-121');
+            });
+        });
+    </script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

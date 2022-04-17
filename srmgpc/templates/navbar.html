@@ -1,0 +1,139 @@
+{% load static %}
+
+<style>
+    .opn {
+        position: fixed;
+        right: 47px;
+        top: 35px;
+        display: inline-block;
+        cursor: pointer;
+        color: white;
+        font-size: 35px;
+        z-index: 1;
+    }
+
+    .overlay {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 12%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    @font-face {
+        font-family: myFirstFont;
+        src: url("{% static 'sidebar.otf' %}");
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #a5a5a5;
+        display: block;
+        transition: 0.3s;
+        font-family: myFirstFont;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 40px;
+        font-size: 60px;
+    }
+
+    #logout {
+
+        position: absolute;
+        top: 25px;
+        left: 35px;
+
+    }
+    #logo{
+        position: fixed;
+        left: 42px;
+        top: 30px;
+        z-index: 2;
+        
+    }
+    #logo-img{
+        height: 70px;
+        width: 46px;
+    }
+    @media only screen and (max-width:800px){
+        #logo{
+            position: fixed;
+            left: 35px;
+            top: 25px;
+            z-index: 2;
+            
+        }
+        #logo-img{
+            height: 60px;
+            width: 42px;
+        }
+    }
+</style>
+
+
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    {% if request.user.is_authenticated %}
+    <a href="{% url 'logout' %}" id="logout"><img src="{% static 'logout.png' %}" alt="" height="50px" width="50px"
+            style="filter: invert(90%);"></a>
+    {% else %}
+    <a href="{% url 'login' %}" id="logout"><img src="{% static 'login.png' %}" alt="" height="35px" width="35px"
+            style="filter: invert(80%);"></a>
+
+    {% endif %}
+
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <a href="{% url 'eventpage' %}" class="links">EVENTS</a>
+        <a href="{% url 'adminpage' %}" class="links">DASHBOARD</a>
+        <a href="{% url 'starnight' %}" class="links">STAR NIGHT</a>
+        <a href="{% url 'xeronight' %}" class="links">XERO NIGHT</a>
+        <a href="{% url 'teampage' %}" class="links">THE TEAM</a>
+        <a href="{% url 'updates' %}" class="links">UPDATES</a>
+        <a href="{% url 'about' %}" class="links">ABOUT</a>
+        <a href="{% url 'developers' %}" class="links">DEVELOPERS</a>
+    </div>
+
+</div>
+
+<span><a href="{% url 'home' %}" id="logo"><img src="{% static 'a.png' %}" alt="" id="logo-img"></a></span>
+<span onclick="openNav()" class="opn" id="opn">&#9776;</span>
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+        document.getElementById("opn").innerHTML = " ";
+        document.getElementById("logo").innerHTML = " ";
+        
+    }
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+        document.getElementById("opn").innerHTML = "&#9776;";
+        document.getElementById("logo").innerHTML = `<img src="{% static 'a.png' %}" alt="" id="logo-img">`;
+    }
+</script>

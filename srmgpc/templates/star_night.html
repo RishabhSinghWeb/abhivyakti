@@ -1,0 +1,212 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/star_night.css' %}">
+
+  <title>Star Night || Abhivyakti'22</title>
+</head>
+
+<body>
+  {% include 'navbar.html' %}
+  <img src="{% static 'starnight.jpg' %}" alt="" class="img-fluid">
+  <p class="text-center text-10">KEEP CALM THE COUNTDOWN HAS BEGUN</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 box-1">
+        <div class="box-2 d-flex align-items-center justify-content-center">
+          <p class="text-center text-5 text-5-box-1" id="days">00</p>
+        </div>
+      </div>
+      <div class="col-3 box-1">
+        <div class="box-2 d-flex align-items-center justify-content-center">
+          <p class="text-center text-5 text-5-box-2" id="hours">00</p>
+        </div>
+      </div>
+      <div class="col-3 box-1">
+        <div class="box-2 d-flex align-items-center justify-content-center">
+          <p class="text-center text-5 text-5-box-3" id="min">00</p>
+        </div>
+      </div>
+      <div class="col-3 box-1">
+        <div class="box-2 d-flex align-items-center justify-content-center">
+          <p class="text-center text-5 text-5-box-4" id="sec">00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main3 mb-4">
+    <h5 class="text-center text-15">Join The Event</h5>
+    <p class="text-20 text-center my-4">Star Night</p>
+    <h5 class="text-center">On 27th February, 2020</h5>
+    <div class="container mt-5 box-3">
+      <p class="text-center text-25">Lots of enjoying and dancing crowd, banging heads, Enthusiastic sound system, a
+        reverberating stage and a
+        chance for you to be with the crowd and enjoy the whole evening with one of the most Lovable, Sensational and
+        Enthusiastic singer PAPON. We would like to welcome you all in our Star Night on 27th February to enjoy your
+        night with our star in our college.<br><br>
+
+        15,000 heads banging, 60,000 watts of sound, a reverberating stage, one night and your chance to be in the midst
+        of it all. With people from Bollywood coming to our college for star nights, this fest surely rocks. The list
+        includes - Vinod Rathore, Euphoria, Shibani Kashyap, Tantriks’ Band, Mika, dance group Zeal, Amit Kumar & Sumit
+        Kumar, Jassi, Suraj Jagan, Remo Fernandes, Mahalakshmi Iyer, Usha uthup, Kunal Ganjawala, Abhijeet, Mamta sharma
+        and to top them all this years attraction.</p>
+    </div>
+  </div>
+
+  <div class="mt-5 text-white">
+    <p class="text-30 text-center my-4">Our Stars</p>
+    <section id="team" class="team content-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-4">
+                <div class="team-member">
+                  <figure>
+                    <img src="{% static 'shantanu.png' %}" alt="" class="img-responsive">
+                  </figure>
+                  <h4>Shantanu Mukherjee</h4>
+                </div><!-- /.team-member-->
+              </div><!-- /.col-md-4 -->
+
+              <div class="col-md-4">
+                <div class="team-member">
+                  <figure>
+                    <img src="{% static 'abhijeet2.jpg' %}" alt="" class="img-responsive">
+
+                  </figure>
+                  <h4>Abhijeet Bhattacharya
+                  </h4>
+                </div><!-- /.team-member-->
+              </div><!-- /.col-md-4 -->
+
+
+              <div class="col-md-4">
+                <div class="team-member">
+                  <figure>
+                    <img src="{% static 'mamta2.jpg' %}" alt="" class="img-responsive">
+
+                  </figure>
+                  <h4>Mamta Sharma</h4>
+                </div><!-- /.team-member-->
+              </div><!-- /.col-md-4 -->
+
+              <div class="col-md-4">
+                <div class="team-member">
+                  <figure>
+                    <img src="{% static 'mika2.jpg' %}" alt="" class="img-responsive">
+
+                  </figure>
+                  <h4>Mika Singh
+                  </h4>
+                </div><!-- /.team-member-->
+              </div><!-- /.col-md-4 -->
+
+              <div class="col-md-4">
+                <div class="team-member">
+                  <figure>
+                    <img src="{% static 'javed2.jpg' %}" alt="" class="img-responsive">
+
+                  </figure>
+                  <h4>Javed Ali
+                  </h4>
+                </div><!-- /.team-member-->
+              </div><!-- /.col-md-4 -->
+
+              <div class="col-md-4">
+                <div class="team-member">
+                  <figure>
+                    <img src="{% static 'harshdeep2.jpg' %}" alt="" class="img-responsive">
+
+                  </figure>
+                  <h4>Harshdeep Kaur
+                  </h4>
+                </div><!-- /.team-member-->
+              </div><!-- /.col-md-4 -->
+
+
+            </div><!-- /.row -->
+          </div><!-- /.container -->
+
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.our-team -->
+
+  </div>
+
+
+  </div>
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script type="text/javascript">
+    // Set the date we're counting down to
+    var countDownDate = new Date("Apr 30, 2021 19:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Output the result in an element with id="demo"
+      if(days<0){
+        days = 00;
+        hours = 00;
+        minutes = 00;
+        seconds = 00;
+      }
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("min").innerHTML = minutes;
+      document.getElementById("sec").innerHTML = seconds;
+
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
+
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

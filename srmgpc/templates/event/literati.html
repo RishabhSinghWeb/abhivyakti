@@ -1,0 +1,526 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/event/literati.css' %}">
+
+    <title>Literati Cell || Events || Abhivyakti'22</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    <p class="text-1 text-center">Literati Cell</p>
+    <div class="main-1">
+        <p class="text-11 text-center">Competitive Events</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'musicalchair.jpg' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Graffiti</h3>
+                        <div class="box-12 overflow-box1">
+
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in graffiti_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{graffiti.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{graffiti.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{graffiti.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow1">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Literati_Cell/Graffiti/solo/" class="text-15">Register Now</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'tugofwar.jpg' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Group Discussion</h3>
+                        <div class="box-12 overflow-box2">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in gd_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{gd.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{gd.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{gd.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow2">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Literati_Cell/Group_Discussion/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'housie.png' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Debate</h3>
+                        <div class="box-12 overflow-box3">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in debate_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{debate.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{debate.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{debate.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow3">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Literati_Cell/Debate/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center box-4">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'khokho.jpg' %}" alt="" class="img-11 img-fluid">
+                        <p class="text-12 text-12-ex text-center py-2">Maymay Mania</p>
+                        <div class="box-12 overflow-box4">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in mm_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{mm.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{mm.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{mm.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow4">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Literati_Cell/Maymay_Mania/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center box-4">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'cricket.jpg' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Trivia Fever</h3>
+                        <div class="box-12 overflow-box5">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in tf_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{tf.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{tf.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{tf.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow5">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Literati_Cell/Trivia_Fever/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center box-4">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'kitewar.jpg' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">PPD</h3>
+                        <div class="box-12 overflow-box6">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in ppd_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{ppd.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{ppd.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{ppd.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow6">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Literati_Cell/PPD/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center box-4">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'darts.jpg' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Pictionary</h3>
+                        <div class="box-12 overflow-box6">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in pictionary_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{pictionary.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{pictionary.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{pictionary.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow6">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Literati_Cell/Pictionary/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center box-4">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'chess.jpg' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Twist & Tale</h3>
+                        <div class="box-12 overflow-box6">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in tat_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{tat.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{tat.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{tat.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow6">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Literati_Cell/Twist_&_Tale/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center box-4">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'lemonrace.jpg' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Open Mic</h3>
+                        <div class="box-12 overflow-box6">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in om_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{om.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{om.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{om.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow6">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Literati_Cell/Open_Mic/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center box-4">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'sackrace.jpg' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Reader's Circle</h3>
+                        <div class="box-12 overflow-box6">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in rc_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{rc.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{rc.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{rc.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow6">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Literati_Cell/Reader's_Circle/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center box-4">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'susd.png' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Scripturesqueue</h3>
+                        <div class="box-12 overflow-box6">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in ss_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{ss.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{ss.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{ss.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow6">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Literati_Cell/Scripturesqueue/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex justify-content-center box-4">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'tlr.png' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">JAM</h3>
+                        <div class="box-12 overflow-box6">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in jam_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{jam.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{jam.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{jam.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow6">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Literati_Cell/JAM/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center box-4"></div>
+
+
+                <div class="col-md-4 d-flex justify-content-center box-4">
+                    <div class="box-11 d-flex flex-column">
+                        <img src="{% static 'tlr.png' %}" alt="" class="img-11 img-fluid">
+                        <h3 class="text-12 text-center py-2">Doodler's Combat</h3>
+                        <div class="box-12 overflow-box6">
+                            <p class="text-13 px-2 pb-1">Rules:</p>
+                            <ul class="text-14 py-0 my-0">
+                                {% for i in dc_rule %}
+                                <li class="ps-2">{{i.rule}}</li>
+                                {% endfor %}
+                            </ul>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="text-13 px-2 py-0">Place</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{dc.place}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Coordinator</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{dc.coordinator}}</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <p class="text-13 px-2 py-0">Contact</p>
+                                <p class="text-13 px-2 py-0">-</p>
+                                <p class="text-13 px-2 py-0">{{dc.contact}}</p>
+                            </div>
+                        </div>
+                        <p class="text-end overflow overflow6">Know more...</p>
+                        <div class="d-flex justify-content-center mb-0">
+                            <a href="/registration/Literati_Cell/Doodler's_Combat/solo/" class="text-15">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-1 main-2">
+        <p class="text-center text-11">Performing Events</p>
+        <div class="container">
+
+            <ul class="text-21">
+                {% for i in ic %}
+                <li class="text-22"><span class="text-23">{{i.name}} :</span> {{i.about}}</li>
+                {% endfor%}
+            </ul>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.overflow1').click(function () {
+                $('.overflow-box1').toggleClass('box-121');
+            });
+            $('.overflow2').click(function () {
+                $('.overflow-box2').toggleClass('box-121');
+            });
+            $('.overflow3').click(function () {
+                $('.overflow-box3').toggleClass('box-121');
+            });
+            $('.overflow4').click(function () {
+                $('.overflow-box4').toggleClass('box-121');
+            });
+            $('.overflow5').click(function () {
+                $('.overflow-box5').toggleClass('box-121');
+            });
+            $('.overflow6').click(function () {
+                $('.overflow-box6').toggleClass('box-121');
+            });
+        });
+    </script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

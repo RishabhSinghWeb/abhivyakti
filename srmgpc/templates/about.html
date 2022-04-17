@@ -1,0 +1,119 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+    <title>About || Abhivyakti'22</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <div class="main-10">
+        <p class="text-5 text-center my-5">ABOUT US</p>
+        <div class="container text-10 text-center">Abhivyakti, the annual cultural festival of Shri Ramswaroop Memorial College of Engineering and Management provides a platform for students to showcase their unique talents and are important in the holistic development of the personality of the students, providing a break from the monotonous routine of evaluation and academics to the students.
+            The three day extravaganza attracts participants not only from various colleges of Uttar Pradesh but also from other states as well. The unique feature of this fest is its management involving the participation of each and every student of the college in some way or the other. Every year various cultural events and competitions are organized which include music, singing, dance, fashion, drama etc. The cultural extravaganza which showcases an envious talent pool of various hobby clubs of the college culminates with a massive rock fest Xero and thereafter with a Bollywood Starnight. 
+            While preserving the spirit and zest of our Cultural Festival, Abhivyakti is scheduled from April 28 to April 30, 2022 to keep the enthusiasm high and the legacy ever golden.</div>
+        <div class="main-15">
+            <p class="text-15 text-center">The Backbone of SRMCEM</p>
+            <div class="container mt-5">
+                <div class="row">
+
+                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                        <img src="{% static 'pooja_mam.png' %}" alt="" class="img-10">
+                        <p class="text-20">Er. Pooja Agarwal</p>
+                        <p class="text-25">Dean</p>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                        <img src="{% static 'pankaj_sir.png' %}" alt="" class="img-10">
+                        <p class="text-20">Mr. Pankaj Agarwal</p>
+                        <p class="text-25">Executive Director</p>
+                    </div>
+                    <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                        <img src="{% static 'bhavesh_sir.jpg' %}" alt="" class="img-10">
+                        <p class="text-20 text-center">Prof.(Dr.) Bhavesh Kr. Chauhan</p>
+                        <p class="text-25">Director General</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-20 container">
+            <p class="text-201 text-center">Our Previous Sponsors</p>
+            <div class="container d-flex justify-content-center">
+
+                <img src="{% static 'sponsors.gif' %}" alt="" class="img-fluid img-201">
+            </div>
+        </div>
+
+        <div class="main-25 container">
+            <p class="text-251 text-center">Contact Us</p>
+            <div class="container box-251">
+                <form action="/about/" method="POST">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-6">
+                            {{form.first_name}}
+                        </div>
+                        <div class="col-6">
+                            {{form.last_name}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mt-4">
+                            {{form.email}}
+                        </div>
+                        <div class="col-md-6 mt-4">
+                            {{form.phone}}
+                        </div>
+                    </div>
+                    <div class="mt-4">
+
+                        {{form.message}}
+                    </div>
+                    <div class="d-grid gap-2 mt-4">
+                        <input type="submit" value="Send Message" class="submit">
+
+                    </div>
+
+                </form>
+                <div class="container">
+
+                    {% for message in messages %}
+
+                    <p id="messages" style="margin: 20px; font-size:larger" class="text-center text-white">{{message}}</p>
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
