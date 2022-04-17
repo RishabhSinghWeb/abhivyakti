@@ -15,6 +15,12 @@ from .decorators import unauthenticated_user,allowed_users,admin_only
 # from django import forms
 from .tasks import register_mail, event_register_mail
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+
 # Create your views here.
 
 @unauthenticated_user
@@ -70,6 +76,8 @@ def home(request):
 @login_required(login_url = 'login')
 @admin_only
 def adminPage(request):
+    # context={}
+    # return render(request,'adminpage.html',context)
     return HttpResponse("Hello Admin")
 
 
@@ -79,7 +87,6 @@ def deleteRegistrations(request, id):
     registration = Registration.objects.get(id=id)
     registration.delete()
     return redirect('adminpage')
-
 
 @login_required(login_url = 'login')
 @allowed_users(allowed_roles=['volunteer'])
@@ -92,6 +99,7 @@ def userPage(request):
         form = ProfileForm(request.POST, request.FILES, instance=profile)
         form.save()
         return redirect('adminpage')
+        # return redirect('userpage')
 
     context={'profile':profile,'form':form,'registration':registration}
     return render(request,'userpage.html',context)
@@ -414,4 +422,8 @@ def developers(request):
     return render(request, 'developers.html', context)
 
 
-
+    """
+def developers(request):
+    context={}
+    return render(request,'developers.html',context)
+    """
