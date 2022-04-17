@@ -11,16 +11,18 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+load_dotenv()
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'lz3@b4erapd43-k$)k0m=(#)46u@^y!2(#ex^)1d$mj)grx&+f'
+SECRET_KEY = os.getenv("Django_key")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -132,6 +134,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'abhivyaktisrmgpc@gmail.com'
-EMAIL_HOST_PASSWORD = 'abhivyakti@227105'
+EMAIL_HOST_USER = os.getenv("Email")
+EMAIL_HOST_PASSWORD = os.getenv('Password')
 EMAIL_USE_TLS = True

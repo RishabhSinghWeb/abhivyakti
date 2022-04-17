@@ -1,0 +1,4 @@
+django-background-tasks
+qrcode
+django_cleanup
+pip install python-dotenv
