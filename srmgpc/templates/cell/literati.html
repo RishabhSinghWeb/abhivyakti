@@ -416,8 +416,61 @@
     </table>
 </div>
 
+
+<div class="container mt-5 border bg-light p-4">
+    <h4 class="text-center">Update Result</h4>
+    {% for message in messages %}
+
+    <h5 id="messages" class="text-center text-success fw-bold">{{message}}</h5>
+
+    {% endfor %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="event">Event Name</label>
+            <select class="form-control" id="event" name="event" required>
+                <option selected disabled></option>
+                <option value="Graffiti">Graffiti</option>
+                <option value="Group Discussion">Group Discussion</option>
+                <option value="Debate">Debate</option>
+                <option value="Maymay Mania">Maymay Mania</option>
+                <option value="Trivia Fever">Trivia Fever</option>
+                <option value="PPD">PPD</option>
+                <option value="Pictionary">Pictionary</option>
+                <option value="Twist & Tale">Twist & Tale</option>
+                <option value="Open Mic">Open Mic</option>
+                <option value="Reader's Circle">Reader's Circle</option>
+                <option value="Scripturesqueue">Scripturesqueue</option>
+                <option value="JAM">JAM</option>
+                <option value="Doodler's Combat">Doodler's Combat</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="position">Position In Event</label>
+            <select class="form-control" id="position" name="position" required>
+                <option value="" selected disabled></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Participant Name*</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Full name of participant"
+                required>
+        </div>
+        <div class="mb-3">
+            <label for="college" class="form-label">College Name*</label>
+            <input type="text" class="form-control" id="college" name="college"
+                placeholder="Participant College name in short(e.g. SRMCEM)" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+
+
 <div class="d-flex justify-content-center mt-4">
-<a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+    <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
 </div>
 
 {% endblock %}

@@ -1,7 +1,9 @@
+from turtle import position
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from sklearn.preprocessing import scale
-from .models import Volunteer,CellName,CompetitionName,Registration
+from .models import Registration,EventResult,EventName
+from django.contrib import messages
 
 
 #Decorators
@@ -48,6 +50,15 @@ def admin_only(view_func):
             return render(request,'adminpage.html',context)
 
         if group == 'Choreography Cell':
+            if request.method == "POST":
+                event = request.POST.get('event')
+                position = request.POST.get('position')
+                name = request.POST.get('name')
+                college = request.POST.get('college')
+                form = EventResult(event_name=EventName.objects.get(event_name=event), name=f"{position}. {name}", college=college)
+                form.save()
+                messages.success(request,"Successfully Updated!")
+                return redirect('adminpage')
             solista = Registration.objects.filter(cell=1, event_name=1)
             squadron = Registration.objects.filter(cell=1, event_name=2)
             impromptu = Registration.objects.filter(cell=1, event_name=3)
@@ -55,6 +66,15 @@ def admin_only(view_func):
             return render(request,'cell/choreography.html',context)
 
         if group == 'Euphony Cell':
+            if request.method == "POST":
+                event = request.POST.get('event')
+                position = request.POST.get('position')
+                name = request.POST.get('name')
+                college = request.POST.get('college')
+                form = EventResult(event_name=EventName.objects.get(event_name=event), name=f"{position}. {name}", college=college)
+                form.save()
+                messages.success(request,"Successfully Updated!")
+                return redirect('adminpage')
             swarjeet = Registration.objects.filter(cell=2, event_name=5)
             swarmel = Registration.objects.filter(cell=2, event_name=6)
             crooner = Registration.objects.filter(cell=2, event_name=7)
@@ -62,6 +82,15 @@ def admin_only(view_func):
             return render(request,'cell/euphony.html',context)
 
         if group == 'Dracula Cell':
+            if request.method == "POST":
+                event = request.POST.get('event')
+                position = request.POST.get('position')
+                name = request.POST.get('name')
+                college = request.POST.get('college')
+                form = EventResult(event_name=EventName.objects.get(event_name=event), name=f"{position}. {name}", college=college)
+                form.save()
+                messages.success(request,"Successfully Updated!")
+                return redirect('adminpage')
             ma = Registration.objects.filter(cell=3, event_name=8)
             am = Registration.objects.filter(cell=3, event_name=9)
             kavyaansh = Registration.objects.filter(cell=3, event_name=10)
@@ -70,6 +99,15 @@ def admin_only(view_func):
             return render(request,'cell/dracula.html',context)
 
         if group == 'Literati Cell':
+            if request.method == "POST":
+                event = request.POST.get('event')
+                position = request.POST.get('position')
+                name = request.POST.get('name')
+                college = request.POST.get('college')
+                form = EventResult(event_name=EventName.objects.get(event_name=event), name=f"{position}. {name}", college=college)
+                form.save()
+                messages.success(request,"Successfully Updated!")
+                return redirect('adminpage')
             graffiti = Registration.objects.filter(cell=11, event_name=56)
             gd = Registration.objects.filter(cell=11, event_name=57)
             debate = Registration.objects.filter(cell=11, event_name=58)
@@ -97,6 +135,15 @@ def admin_only(view_func):
             return render(request,'cell/photography.html',context)
 
         if group == "Newspaper Cell":
+            if request.method == "POST":
+                event = request.POST.get('event')
+                position = request.POST.get('position')
+                name = request.POST.get('name')
+                college = request.POST.get('college')
+                form = EventResult(event_name=EventName.objects.get(event_name=event), name=f"{position}. {name}", college=college)
+                form.save()
+                messages.success(request,"Successfully Updated!")
+                return redirect('adminpage')
             ypia = Registration.objects.filter(cell=12, event_name=69)
             fq = Registration.objects.filter(cell=12, event_name=70)
             context = {'ypia':ypia, 'fq':fq}
@@ -110,6 +157,15 @@ def admin_only(view_func):
             return render(request,'cell/media.html',context)
 
         if group == 'Creative Canvas Club':
+            if request.method == "POST":
+                event = request.POST.get('event')
+                position = request.POST.get('position')
+                name = request.POST.get('name')
+                college = request.POST.get('college')
+                form = EventResult(event_name=EventName.objects.get(event_name=event), name=f"{position}. {name}", college=college)
+                form.save()
+                messages.success(request,"Successfully Updated!")
+                return redirect('adminpage')
             ag = Registration.objects.filter(cell=9, event_name=37)
             bw = Registration.objects.filter(cell=9, event_name=39)
             osps = Registration.objects.filter(cell=9, event_name=38)

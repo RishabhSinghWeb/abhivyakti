@@ -1,8 +1,6 @@
-from pyexpat import model
-from turtle import mode
+
 from django.db import models
 from django.contrib.auth.models import User
-from django.forms import EmailField
 import qrcode 
 from io import BytesIO
 from django.core.files import File
